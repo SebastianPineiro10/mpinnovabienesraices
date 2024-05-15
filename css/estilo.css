@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #082032;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: black;
+    font-size: 12px;
+
+}
+header div{
+    text-align: center;
+    
+}
+h1{
+    color: goldenrod;
+    text-align: center;
+    padding: 33px;
+}
+h2{
+    color: goldenrod;
+    text-align: left;
+    padding: 10px;
+}
+.logo{
+    border-radius: 50%;
+    width: 120px;
+    display: block;
+    margin: 0 auto 0 120px; /* Esta línea centra la imagen horizontalmente y le agrega un margen de 50px a la derecha */
+}
+    
+ul{
+    list-style-type: none;
+}
+footer{
+    background:   linear-gradient(to right, #c9b977, #a89d56);
+
+}
+
+footer h3{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.logo img{
+    width: 100px;
+    padding: 5px;
+    float: center;
+
+}
+
+.menu li a:hover{
+    color: white;
+    background-color: goldenrod;
+    border-radius: 10px;
+
+}
+.lujo{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Imagenes/cocina-diseno-interior-casa-lujo-diseno-moderno-habitacion-vacia-decorativa-que-sirve-apartamento-banner-venta-alquiler-bienes-raices-simplemente-interior-minimalista-escandinavo.avif);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.vision{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Imagenes/media_thumb_subseccion_8.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.socios {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+
+}
+.socios section{
+    width: 100%; 
+    max-width: 12000px; 
+    padding: 200px;
+
+
+}
+.socios video {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.mision {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Imagenes/Tendencias-inmobiliarias-en-Colombia-primer-trimestre-2023.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.valores {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Imagenes/mision-vision-y-valores-de-una-empresa.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    color: white;
+
+    
+
+}
+
+.container section {
+    width: 100%; 
+    max-width: 900px; 
+    padding: 20px; 
+
+}     
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    max-width: 90%; /* Definir un ancho máximo para el modal */
+    max-height: 90%; /* Definir una altura máxima para el modal */
+    overflow: auto; /* Agregar desplazamiento si el contenido es demasiado grande */
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    z-index: 1; /* Asegurar que esté por encima del contenido del modal */
+}
+
+.modal video {
+    width: 100%;
+    height: auto;
+}
+
+#modal-video:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    color: white;
+}
+    
+.servicios{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+        
+    }
+.servicios .section {
+        flex: 1.0 auto;
+        max-width: 500px;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(218, 165, 32, 0.9);
+        transition: transform 0.3s ease;
+        
+    
+}
+.servicios .section:hover {
+    transform: scale(1.1);
+    margin: 20px;
+    
+
+}
+.tituloservicio{
+    padding: 20px;
+
+}
+.history{
+width: 100%;
+height: 100vh;
+background-image: url(../Imagenes/328913959_1618350681963484_8200614196009930542_n.jpg);
+background-position: right;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.texto p{
+    padding: 10px;
+    text-align: center;
+}
+
+.propiedades-destacadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.propiedades-destacadas div {
+    margin: 5px;
+    border: double grey 3px;
+}
+
+.propiedades-destacadas img {
+    width: 300px; /* Tamaño deseado para las imágenes */
+    height: auto; /* Mantiene la relación de aspecto */
+    opacity: 0.4;
+    transition: opacity 0.3s; /* Transición suave de opacidad */
+}
+
+.propiedades-destacadas div:hover {
+    border: solid white 3px;
+}
+
+.propiedades-destacadas img:hover {
+    opacity: 1;
+}
+
+.menu .facebook,
+.menu .instagram {
+    color: #ffffff; /* Color blanco para los iconos */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.menu .facebook:hover,
+.menu .instagram:hover {
+    color: #ffcc00; /* Color amarillo al pasar el mouse */
+}
+.menu .facebook,
+.menu .instagram {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+    border-radius: 50%; /* Redondea los bordes para un aspecto más suave */
+    padding: 5px; /* Añade un poco de espacio alrededor de los iconos */
+}
+.formulario{
+    padding: 15px;
+}
+.mapa{
+    padding: 15px;
+}
+.innova{
+    padding: 15px;
+}
+.titulo{
+    padding: 40px;
+    text-align: center;
+}
+.propiedadtitulo{
+    padding: 15px;
+}
+.parrafos{
+    padding: 15px;
+}
+.descripcion{
+    padding: 15px;
+}
+.border{
+    border-top: solid;
+}
+.nav{
+    border-bottom: solid;
+}
+
+.dropdown-menu {
+    background-color: #343a40; /* Cambia el color de fondo a coincidir con el color de la barra de navegación */
+}
+
+.dropdown-menu .dropdown-item {
+    color: white; /* Cambia el color del texto a blanco */
+    font-size: 18px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color:goldenrod; /* Cambia el color de fondo al pasar el mouse */
+}
+.navbar {
+    justify-content: center; /* Centra los elementos de la barra de navegación */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Ajusta el tamaño de la fuente de los enlaces */
+    margin-right: 40px;
+}
+
+
+.tituloservicio h2{
+    text-align: center;
+}
+#carouselExampleIndicators .carousel-item img {
+    width: 100%; /* Establece un ancho del 100% para que las imágenes no se desborden */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    max-height: 400px; /* Establece una altura máxima */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
+}
+
+#carouselExampleIndicators {
+    max-width: 800px; /* Establece un ancho máximo para el carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    padding: 20px;
+}
+
+/* Estilos para las flechas del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Asegura que las flechas estén por encima del carrusel */
+}
+
+.carousel-control-prev {
+    left: -80px; /* Ajusta la posición de la flecha izquierda */
+}
+
+.carousel-control-next {
+    right: -80px; /* Ajusta la posición de la flecha derecha */
+}
