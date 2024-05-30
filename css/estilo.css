@@ -1,616 +1,1057 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color:  #082032;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header div{
-    text-align: center;
-    
-}
-h1{
-    color: goldenrod;
-    text-align: center;
-    padding: 33px;
-}
-h2{
-    color: goldenrod;
-    text-align: left;
-    padding: 10px;
-    
-}
-h6{
-    text-align: left;
-}
-.logo{
-    border-radius: 50%;
-    width: 140px;
-    display: block;
-    margin: 0 auto 0 60px; /* Esta línea centra la imagen horizontalmente y le agrega un margen de 50px a la derecha */
-}
-    
-ul{
-    list-style-type: none;
-}
-footer{
-    background:   linear-gradient(to right, #c9b977, #a89d56);
-
+body {
+  background-color: #082032;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-footer h3{
-    text-align: center;
-    color: white;
-    font-size: 16px;
+header div {
+  text-align: center;
 }
 
-.menu li a:hover{
-    color: white;
-    background-color: goldenrod;
-    border-radius: 10px;
-
-}
-.lujo{
-    
-    width: 100%;
-    height: 100vh;
-    background-image: url(../Imagenes/cocina-diseno-interior-casa-lujo-diseno-moderno-habitacion-vacia-decorativa-que-sirve-apartamento-banner-venta-alquiler-bienes-raices-simplemente-interior-minimalista-escandinavo.avif);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.vision{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../Imagenes/media_thumb_subseccion_8.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-}
-.socios {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
-
-}
-.socios section{
-    width: 100%; 
-    max-width: 12000px; 
-    padding: 200px;
-
-
-}
-.socios video {
-    width: 100%; 
-    max-width: 600px; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
+h1 {
+  color: goldenrod;
+  text-align: center;
+  padding: 33px;
 }
 
-.mision {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../Imagenes/Tendencias-inmobiliarias-en-Colombia-primer-trimestre-2023.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.valores {
-
-    width: 100%;
-    height: 100vh;
-    background-image: url(../Imagenes/mision-vision-y-valores-de-una-empresa.jpg);
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-
+h2 {
+  color: goldenrod;
+  text-align: left;
+  padding: 15px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    color: white;
-
-    
-
+h6 {
+  text-align: left;
+  padding: 15px;
 }
 
-.container section {
-    width: 100%; 
-    max-width: 900px; 
-    padding: 20px; 
-
-}     
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-    max-width: 90%; /* Definir un ancho máximo para el modal */
-    max-height: 90%; /* Definir una altura máxima para el modal */
-    overflow: auto; /* Agregar desplazamiento si el contenido es demasiado grande */
+p {
+  font-size: 18px;
 }
 
-.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    text-decoration: none;
-    z-index: 1; /* Asegurar que esté por encima del contenido del modal */
+.logo {
+  border-radius: 50%;
+  width: 140px;
+  display: block;
+  margin: 0 auto 0 60px;
+  /* Esta línea centra la imagen horizontalmente y le agrega un margen de 50px a la derecha */
 }
 
-.modal video {
-    width: 100%;
-    height: auto;
+ul {
+  list-style-type: none;
 }
 
-#modal-video:target {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form {
-    color: white;
-}
-    
-.servicios{
-    
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        color: white;
-        
-    }
-.servicios .section {
-        flex: 1.0 auto;
-        max-width: 500px;
-        padding: 20px;
-        margin: 20px;
-        background-color: rgba(218, 165, 32, 0.9);
-        transition: transform 0.3s ease;
-        
-    
-}
-.servicios .section:hover {
-    transform: scale(1.1);
-    margin: 20px;
-    
-
-}
-.tituloservicio{
-    padding: 20px;
-
-}
-.history{
-width: 100%;
-height: 100vh;
-background-image: url(../Imagenes/328913959_1618350681963484_8200614196009930542_n.jpg);
-background-position: right;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-}
-.texto p{
-    padding: 10px;
-    text-align: center;
-}
-
-.propiedades-destacadas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.propiedades-destacadas div {
-    margin: 5px;
-    border: double grey 3px;
-}
-
-.propiedades-destacadas img {
-    width: 300px; /* Tamaño deseado para las imágenes */
-    height: 300px; /* Alto fijo para todas las imágenes */
-    object-fit: cover; /* Escalar la imagen para cubrir el contenedor sin distorsión */
-    opacity: 0.4;
-    transition: opacity 0.3s; /* Transición suave de opacidad */
-}
-
-.propiedades-destacadas div:hover {
-    border: solid white 3px;
-}
-
-.propiedades-destacadas img:hover {
-    opacity: 1;
+.menu li a:hover {
+  color: white;
+  background-color: goldenrod;
+  border-radius: 10px;
 }
 
 .menu .facebook,
 .menu .instagram {
-    color: #ffffff; /* Color blanco para los iconos */
-    transition: color 0.3s ease; /* Transición suave del color */
+  color: #ffffff; /* Color blanco para los iconos */
+  transition: color 0.3s ease; /* Transición suave del color */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+  border-radius: 50%; /* Redondea los bordes para un aspecto más suave */
+  padding: 5px; /* Añade un poco de espacio alrededor de los iconos */
 }
-
 .menu .facebook:hover,
 .menu .instagram:hover {
-    color: #ffcc00; /* Color amarillo al pasar el mouse */
+  color: #ffcc00; /* Color amarillo al pasar el mouse */
 }
-.menu .facebook,
-.menu .instagram {
-    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
-    border-radius: 50%; /* Redondea los bordes para un aspecto más suave */
-    padding: 5px; /* Añade un poco de espacio alrededor de los iconos */
+
+.border {
+  border-top: solid;
 }
-.formulario{
-    padding: 15px;
-}
-.mapa{
-    padding: 15px;
-}
-.innova{
-    padding: 15px;
-}
-.titulo{
-    padding: 40px;
-    text-align: center;
-}
-.propiedadtitulo{
-    padding: 15px;
-}
-.parrafos{
-    padding: 15px;
-}
-.descripcion{
-    padding: 15px;
-}
-.border{
-    border-top: solid;
-}
-.nav{
-    border-bottom: solid;
+
+.nav {
+  border-bottom: solid;
 }
 
 .dropdown-menu {
-    background-color: #343a40; /* Cambia el color de fondo a coincidir con el color de la barra de navegación */
+  background-color: #343a40;
+  /* Cambia el color de fondo a coincidir con el color de la barra de navegación */
 }
-
 .dropdown-menu .dropdown-item {
-    color: white; /* Cambia el color del texto a blanco */
-    font-size: 17px;
+  color: white;
+  /* Cambia el color del texto a blanco */
+  font-size: 17px;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: goldenrod;
+  /* Cambia el color de fondo al pasar el mouse */
 }
 
-.dropdown-menu .dropdown-item:hover {
-    background-color:goldenrod; /* Cambia el color de fondo al pasar el mouse */
-}
 .navbar {
-    justify-content: center; /* Centra los elementos de la barra de navegación */
+  justify-content: center;
+  /* Centra los elementos de la barra de navegación */
 }
 
 .navbar-nav .nav-link {
-    font-size: 18px; /* Ajusta el tamaño de la fuente de los enlaces */
-    margin-right: 62px;
+  font-size: 18px;
+  /* Ajusta el tamaño de la fuente de los enlaces */
+  margin-right: 62px;
 }
 
-.tituloservicio h2{
-    text-align: center;
+.lujo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/cocinalujo.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-#carouselExampleIndicators .carousel-item img {
-    width: 100%; /* Establece un ancho del 100% para que las imágenes no se desborden */
-    height: auto; /* Altura automática para mantener la relación de aspecto */
-    max-height: 400px; /* Establece una altura máxima */
-    object-fit: contain; /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+.container section {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.socios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socios section {
+  width: 100%;
+  max-width: 12000px;
+  padding: 200px;
+}
+.socios video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  max-width: 90%;
+  /* Definir un ancho máximo para el modal */
+  max-height: 90%;
+  /* Definir una altura máxima para el modal */
+  overflow: auto;
+  /* Agregar desplazamiento si el contenido es demasiado grande */
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+  /* Asegurar que esté por encima del contenido del modal */
+}
+
+.modal video {
+  width: 100%;
+  height: auto;
+}
+
+#modal-video:target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloservicio {
+  padding: 20px;
+}
+.tituloservicio h2 {
+  text-align: center;
+}
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+.servicios .section {
+  flex: 1 auto;
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(218, 165, 32, 0.9);
+  transition: transform 0.3s ease;
+}
+.servicios .section:hover {
+  transform: scale(1.1);
+  margin: 20px;
 }
 
 #carouselExampleIndicators {
-    max-width: 800px; /* Establece un ancho máximo para el carrusel */
-    margin: 0 auto; /* Centra el carrusel horizontalmente */
-    padding: 20px;
+  max-width: 800px;
+  /* Establece un ancho máximo para el carrusel */
+  margin: 0 auto;
+  /* Centra el carrusel horizontalmente */
+  padding: 20px;
+}
+#carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  /* Establece un ancho del 100% para que las imágenes no se desborden */
+  height: auto;
+  /* Altura automática para mantener la relación de aspecto */
+  max-height: 400px;
+  /* Establece una altura máxima */
+  object-fit: contain;
+  /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
 }
 
 /* Estilos para las flechas del carrusel */
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1; /* Asegura que las flechas estén por encima del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  /* Asegura que las flechas estén por encima del carrusel */
 }
 
 .carousel-control-prev {
-    left: -80px; /* Ajusta la posición de la flecha izquierda */
+  left: -80px;
+  /* Ajusta la posición de la flecha izquierda */
 }
 
 .carousel-control-next {
-    right: -80px; /* Ajusta la posición de la flecha derecha */
-}
-
-.catalog {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px;
-    overflow-x: auto;
-    margin-top: 20px; /* Ajusta según sea necesario */
-}
-
-.product {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    border: 1px solid #ccc;
-    max-width: 300px; /* Ancho máximo del producto */
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-
-.product-info {
-    padding: 10px;
-}
-
-.product-info h2 {
-    margin-top: 5px;
-    font-size: 1em;
-}
-
-.product-info p {
-    margin-top: 5px;
-}
-
-.product-info span {
-    display: block;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.product img {
-    width: 300px; /* Ancho fijo para la imagen */
-    height: 300px; /* Alto fijo para la imagen */
-    object-fit: cover; /* Escalar la imagen para cubrir el contenedor sin distorsión */
+  right: -80px;
+  /* Ajusta la posición de la flecha derecha */
 }
 
 .cuadros {
-    margin: 15px; /* Agrega un margen exterior de 20px alrededor del contenedor */
+  margin: 15px;
+  /* Agrega un margen exterior de 20px alrededor del contenedor */
 }
 .cuadros .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crear columnas de tamaño variable */
-    grid-gap: 20px; /* Espacio entre las tarjetas */
-    overflow-x: auto; /* Permitir el desplazamiento horizontal */
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Crear columnas de tamaño variable */
+  grid-gap: 20px;
+  /* Espacio entre las tarjetas */
+  overflow-x: auto;
+  /* Permitir el desplazamiento horizontal */
+  padding: 10px;
 }
 
 .service-card {
-    background-color: #ffffff; /* Cambia el color de fondo */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
+  background-color: #ffffff;
+  /* Cambia el color de fondo */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  transition: box-shadow 0.3s ease;
+  /* Transición suave de la sombra */
 }
-
 .service-card:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  /* Aumenta la sombra en hover */
 }
-
 .service-card h3 {
-    font-size: 1.5em; /* Tamaño de fuente más grande */
-    margin-bottom: 15px; /* Espacio entre el título y el párrafo */
-    color: #a89d56; /* Color del texto */
-    text-align: center;
+  font-size: 1.5em;
+  /* Tamaño de fuente más grande */
+  margin-bottom: 15px;
+  /* Espacio entre el título y el párrafo */
+  color: goldenrod;
+  /* Color del texto */
+  text-align: center;
+}
+.service-card p {
+  font-size: 16px;
+  /* Tamaño de fuente más grande */
+  color: black;
+  /* Color del texto */
+  text-align: center;
 }
 
-.service-card p {
-    font-size: 16px; /* Tamaño de fuente más grande */
-    color: #c9b977; /* Color del texto */
-    text-align: center;
+.vision {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/media_thumb_subseccion_8.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.boton{
-    color: black;
-    font-size: 16px;
-    padding: 15px;
-    text-align: center;
-    
+
+.valores {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/mision-vision-y-valores-de-una-empresa.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.valores-lista {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.history {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/328913959_1618350681963484_8200614196009930542_n.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.texto p {
+  padding: 10px;
+  text-align: left;
+}
+
+.propiedades-destacadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.propiedades-destacadas div {
+  margin: 5px;
+  border: double grey 3px;
+}
+.propiedades-destacadas img {
+  width: 300px;
+  /* Tamaño deseado para las imágenes */
+  height: 300px;
+  /* Alto fijo para todas las imágenes */
+  object-fit: cover;
+  /* Escalar la imagen para cubrir el contenedor sin distorsión */
+  opacity: 0.4;
+  transition: opacity 0.3s;
+  /* Transición suave de opacidad */
+}
+.propiedades-destacadas div:hover {
+  border: solid white 3px;
+}
+.propiedades-destacadas img:hover {
+  opacity: 1;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 1px solid #ccc;
+  max-width: 300px;
+  /* Ancho máximo del producto */
+}
+
+.catalog {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  overflow-x: auto;
+  margin-top: 20px;
+  /* Ajusta según sea necesario */
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 10px;
+}
+.product-info h2 {
+  margin-top: 5px;
+  font-size: 1.3em;
+}
+.product-info p {
+  margin-top: 5px;
+}
+.product-info span {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.product img {
+  width: 300px;
+  /* Ancho fijo para la imagen */
+  height: 300px;
+  /* Alto fijo para la imagen */
+  object-fit: cover;
+  /* Escalar la imagen para cubrir el contenedor sin distorsión */
+}
+
+.boton {
+  color: black;
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
 }
 
 .card {
-    max-width: 90%;
-    margin: 10px auto; /* Centra horizontalmente */
+  max-width: 90%;
+  margin: 10px auto;
+  /* Centra horizontalmente */
 }
+
+.formulario {
+  padding: 15px;
+}
+
+.mapa {
+  padding: 15px;
+}
+
+.mision {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imagenes/Tendencias-inmobiliarias-en-Colombia-primer-trimestre-2023.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .footer {
-    position: relative;
-    width: 100%;
-    background: gray;
-    min-height: 100px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 10px 5px;
-    flex-wrap: wrap;
-  }
-  
-  .icon-elem {
-    list-style: none;
-  }
-  
-  .icon {
-    color: white;
-    font-size: 32px;
-    display: inline-block;
-    margin: 0 10px;
-    transition: 0.5s;
-  }
-  
-  .icon:hover {
-    transform: translateY(-10px);
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
-  }
-  
-  .menu-elem {
-    list-style: none;
-  }
-  .menu-icon {
-    color: white;
-    font-size: 20px;
-    display: inline-block;
-    text-decoration: none;
-    margin: 5px 10px;
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-  
-  .menu-icon:hover {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
+  position: relative;
+  width: 100%;
+  background: gray;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
 
+.icon-elem {
+  list-style: none;
+}
 
+.icon {
+  color: white;
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-elem {
+  list-style: none;
+}
+
+.menu-icon {
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.menu-icon:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
 
 @media only screen and (max-width: 480px) {
-    .propiedades-destacadas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .propiedades-destacadas div {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .catalog {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product {
-        max-width: 90%;
-        margin: 10px 0;
-    }
+  .propiedades-destacadas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .propiedades-destacadas div {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product {
+    max-width: 90%;
+    margin: 10px 0;
+  }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .catalog {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño flexible */
-        grid-gap: 10px;
-        justify-items: center; /* Centra las tarjetas horizontalmente */
-    }
-
-    .product {
-        width: 100%; /* Ajusta el ancho al 100% del contenedor */
-        max-width: none; /* Elimina el ancho máximo para permitir que las tarjetas ocupen todo el ancho */
-    }
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño flexible */
+    grid-gap: 10px;
+    justify-items: center; /* Centra las tarjetas horizontalmente */
+  }
+  .product {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: none; /* Elimina el ancho máximo para permitir que las tarjetas ocupen todo el ancho */
+  }
 }
-
 /* Estilos para dispositivos con una anchura de hasta 979px (tablets y monitores pequeños) */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .catalog {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en dispositivos medianos */
-    }
+  .catalog {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en dispositivos medianos */
+  }
 }
-
 /* Estilos para dispositivos con una anchura de hasta 1200px (monitores medianos y grandes) */
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
-    .catalog {
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas en monitores medianos */
-    }
+  .catalog {
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en monitores medianos */
+  }
 }
-
 /* Estilos para dispositivos con una anchura mayor a 1200px (monitores grandes) */
 @media only screen and (min-width: 1201px) {
-    .catalog {
-        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en monitores grandes */
-    }
+  .catalog {
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en monitores grandes */
+  }
 }
-
-
-
-
 @media only screen and (min-width: 1201px) {
-    /* Agrega estilos específicos para pantallas grandes aquí */
-    .container {
-        max-width: 1140px;
-    }
-    .navbar-nav {
-        margin-left: auto;
-    }
+  /* Agrega estilos específicos para pantallas grandes aquí */
+  .container {
+    max-width: 1140px;
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
 }
-
 /* Estilos para pantallas medianas (980px - 1200px) */
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
-    /* Agrega estilos específicos para pantallas medianas aquí */
-    .container {
-        max-width: 960px;
-    }
+  /* Agrega estilos específicos para pantallas medianas aquí */
+  .container {
+    max-width: 960px;
+  }
 }
-
 /* Estilos para pantallas medianas (768px - 979px) */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-    /* Agrega estilos específicos para pantallas medianas aquí */
-    .container {
-        max-width: 720px;
-    }
+  /* Agrega estilos específicos para pantallas medianas aquí */
+  .container {
+    max-width: 720px;
+  }
 }
-
 /* Estilos para pantallas pequeñas (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    /* Agrega estilos específicos para pantallas pequeñas aquí */
-    .container {
-        max-width: 100%;
-    }
-    .navbar-nav {
-        margin-left: auto;
-    }
+  /* Agrega estilos específicos para pantallas pequeñas aquí */
+  .container {
+    max-width: 100%;
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
 }
-
 /* Estilos para pantallas muy pequeñas (480px o menos) */
 @media only screen and (max-width: 480px) {
-    /* Agrega estilos específicos para pantallas muy pequeñas aquí */
-    .container {
-        max-width: 100%;
-    }
-    .navbar-nav {
-        margin-left: auto;
-    }
-    .navbar-toggler {
-        margin-right: 15px;
-    }
+  /* Agrega estilos específicos para pantallas muy pequeñas aquí */
+  .container {
+    max-width: 100%;
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
+  .navbar-toggler {
+    margin-right: 15px;
+  }
 }
+/* Media queries para la página de visión */
+@media only screen and (min-width: 1201px) {
+  /* Estilos para pantallas grandes */
+  .vision h1 {
+    font-size: 32px; /* Tamaño de fuente para dispositivos grandes */
+  }
+  .vision p {
+    font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
+    line-height: 1.6; /* Interlineado para dispositivos grandes */
+  }
+  .vision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+}
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  /* Estilos para pantallas medianas (980px - 1200px) */
+  .vision h1 {
+    font-size: 28px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .vision p {
+    font-size: 16px; /* Tamaño de fuente para dispositivos medianos */
+    line-height: 1.5; /* Interlineado para dispositivos medianos */
+  }
+  .vision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  /* Estilos para pantallas medianas (768px - 979px) */
+  .vision h1 {
+    font-size: 24px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .vision p {
+    font-size: 14px; /* Tamaño de fuente para dispositivos medianos */
+    line-height: 1.4; /* Interlineado para dispositivos medianos */
+  }
+  .vision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+}
+@media only screen and (max-width: 767px) {
+  /* Estilos para pantallas pequeñas (481px - 767px) */
+  .vision h1 {
+    font-size: 20px; /* Tamaño de fuente para dispositivos pequeños */
+  }
+  .vision p {
+    font-size: 12px; /* Tamaño de fuente para dispositivos pequeños */
+    line-height: 1.3; /* Interlineado para dispositivos pequeños */
+  }
+  .vision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+}
+/* Estilos para pantallas muy pequeñas (480px o menos) */
+@media only screen and (max-width: 480px) {
+  /* Estilos para pantallas muy pequeñas (480px o menos) */
+  .vision h1 {
+    font-size: 18px; /* Tamaño de fuente para dispositivos muy pequeños */
+  }
+  .vision p {
+    font-size: 10px; /* Tamaño de fuente para dispositivos muy pequeños */
+    line-height: 1.2; /* Interlineado para dispositivos muy pequeños */
+  }
+  .vision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+}
+/* Estilos para pantallas muy grandes (1201px o más) */
+@media only screen and (min-width: 1201px) {
+  .valores {
+    padding: 50px 100px; /* Ajusta el padding según necesidades */
+  }
+  .valores-lista li {
+    font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
+  }
+  .valores img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+}
+/* Estilos para pantallas medianas (980px - 1200px) */
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .valores {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .valores-lista li {
+    font-size: 18px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .valores img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+}
+/* Estilos para pantallas medianas (768px - 979px) */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .valores {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .valores-lista li {
+    font-size: 18px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .valores img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+}
+/* Estilos para pantallas pequeñas (481px - 767px) */
+@media only screen and (max-width: 767px) {
+  .valores {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .valores-lista li {
+    font-size: 18px; /* Tamaño de fuente para dispositivos pequeños */
+  }
+  .valores img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+}
+/* Estilos para pantallas muy pequeñas (480px o menos) */
+@media only screen and (max-width: 480px) {
+  .valores {
+    padding: 50px 5px; /* Ajusta el padding según necesidades */
+  }
+  .valores-lista li {
+    font-size: 14px; /* Tamaño de fuente para dispositivos muy pequeños */
+  }
+  .valores img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+}
+/* Estilos para pantallas muy grandes (1201px o más) */
+@media only screen and (min-width: 1201px) {
+  .history {
+    padding: 50px 100px; /* Ajusta el padding según necesidades */
+  }
+  .history h1 {
+    font-size: 32px; /* Tamaño de fuente para dispositivos grandes */
+  }
+  .history p {
+    font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
+    line-height: 1.6; /* Interlineado para dispositivos grandes */
+  }
+  .history img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+}
+/* Estilos para pantallas medianas (980px - 1200px) */
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .history {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .history h1 {
+    font-size: 28px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .history p {
+    font-size: 16px; /* Tamaño de fuente para dispositivos medianos */
+    line-height: 1.5; /* Interlineado para dispositivos medianos */
+  }
+  .history img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+}
+/* Estilos para pantallas medianas (768px - 979px) */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .history {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .history h1 {
+    font-size: 24px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .history p {
+    font-size: 14px; /* Tamaño de fuente para dispositivos medianos */
+    line-height: 1.4; /* Interlineado para dispositivos medianos */
+  }
+  .history img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+}
+/* Estilos para pantallas pequeñas (481px - 767px) */
+@media only screen and (max-width: 767px) {
+  .history {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .history h1 {
+    font-size: 20px; /* Tamaño de fuente para dispositivos pequeños */
+  }
+  .history p {
+    font-size: 12px; /* Tamaño de fuente para dispositivos pequeños */
+    line-height: 1.3; /* Interlineado para dispositivos pequeños */
+  }
+  .history img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+}
+/* Estilos para pantallas muy pequeñas (480px o menos) */
+@media only screen and (max-width: 480px) {
+  .history {
+    padding: 50px 5px; /* Ajusta el padding según necesidades */
+  }
+  .history h1 {
+    font-size: 18px; /* Tamaño de fuente para dispositivos muy pequeños */
+  }
+  .history p {
+    font-size: 10px; /* Tamaño de fuente para dispositivos muy pequeños */
+    line-height: 1.2; /* Interlineado para dispositivos muy pequeños */
+  }
+  .history img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+  /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+}
+/* Estilos para pantallas muy grandes (1201px o más) */
+@media only screen and (min-width: 1201px) {
+  .mision {
+    padding: 50px 100px; /* Ajusta el padding según necesidades */
+  }
+  .mision h1, .mision h2 {
+    font-size: 32px; /* Tamaño de fuente para dispositivos grandes */
+  }
+  .mision p {
+    font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
+    line-height: 1.6; /* Interlineado para dispositivos grandes */
+  }
+  .mision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+}
+/* Estilos para pantallas medianas (980px - 1200px) */
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .mision {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .mision h1, .mision h2 {
+    font-size: 28px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .mision p {
+    font-size: 16px; /* Tamaño de fuente para dispositivos medianos */
+    line-height: 1.5; /* Interlineado para dispositivos medianos */
+  }
+  .mision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+}
+/* Estilos para pantallas medianas (768px - 979px) */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .mision {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .mision h1, .mision h2 {
+    font-size: 24px; /* Tamaño de fuente para dispositivos medianos */
+  }
+  .mision p {
+    font-size: 14px; /* Tamaño de fuente para dispositivos medianos */
+    line-height: 1.4; /* Interlineado para dispositivos medianos */
+  }
+  .mision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+}
+/* Estilos para pantallas pequeñas (481px - 767px) */
+@media only screen and (max-width: 767px) {
+  .mision {
+    padding: 50px 10px; /* Ajusta el padding según necesidades */
+  }
+  .mision h1, .mision h2 {
+    font-size: 20px; /* Tamaño de fuente para dispositivos pequeños */
+  }
+  .mision p {
+    font-size: 12px; /* Tamaño de fuente para dispositivos pequeños */
+    line-height: 1.3; /* Interlineado para dispositivos pequeños */
+  }
+  .mision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+}
+/* Estilos para pantallas muy pequeñas (480px o menos) */
+@media only screen and (max-width: 480px) {
+  .mision {
+    padding: 50px 5px; /* Ajusta el padding según necesidades */
+  }
+  .mision h1, .mision h2 {
+    font-size: 18px; /* Tamaño de fuente para dispositivos muy pequeños */
+  }
+  .mision p {
+    font-size: 10px; /* Tamaño de fuente para dispositivos muy pequeños */
+    line-height: 1.2; /* Interlineado para dispositivos muy pequeños */
+  }
+  .mision img {
+    max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  body {
+    font-size: 18px;
+  }
+  .formulario {
+    font-size: 18px;
+  }
+}
+/* Estilos para pantallas grandes (981px - 1200px) */
+@media only screen and (min-width: 981px) and (max-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+  .formulario {
+    width: 70%;
+    font-size: 16px;
+  }
+  .mapa {
+    padding-bottom: 50%;
+  }
+}
+/* Estilos para pantallas medianas (768px - 980px) */
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  body {
+    font-size: 18px;
+  }
+  .formulario {
+    width: 80%;
+    font-size: 16px;
+  }
+  .mapa {
+    padding-bottom: 55%;
+  }
+}
+/* Estilos para pantallas pequeñas (481px - 767px) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+  .formulario {
+    width: 90%;
+    font-size: 16px;
+  }
+  .formulario form div,
+  .formulario input[type=submit],
+  .formulario input[type=reset] {
+    width: 100%;
+  }
+  .formulario input[type=submit] {
+    margin-right: 0;
+  }
+  .mapa {
+    padding-bottom: 60%;
+  }
+}
+/* Estilos para pantallas muy pequeñas (480px o menos) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 18px;
+  }
+  .formulario {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .formulario form div,
+  .formulario input[type=submit],
+  .formulario input[type=reset] {
+    width: 100%;
+  }
+  .formulario input[type=submit] {
+    margin-right: 0;
+  }
+  .mapa {
+    padding-bottom: 70%;
+  }
+}
+/* Estilos para hacer el formulario responsivo */
+@media only screen and (max-width: 767px) {
+  .formulario {
+    padding: 20px; /* Ajusta el padding según necesidades */
+  }
+  .formulario form {
+    max-width: 100%;
+  }
+  .formulario form label,
+  .formulario form input,
+  .formulario form select,
+  .formulario form textarea,
+  .formulario form input[type=submit],
+  .formulario form input[type=reset] {
+    width: 100%;
+  }
+}
+/* Estilos para hacer el mapa responsivo */
+@media only screen and (max-width: 767px) {
+  .mapa {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  .mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

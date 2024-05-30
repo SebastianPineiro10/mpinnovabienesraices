@@ -1,0 +1,227 @@
+.lujo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/cocinalujo.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: $color-blanco;
+
+    section {
+        width: 100%;
+        max-width: 900px;
+        padding: 20px;
+    }
+}
+
+
+.socios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        width: 100%;
+        max-width: 12000px;
+        padding: 200px;
+    }
+
+    video {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    max-width: 90%;
+    /* Definir un ancho máximo para el modal */
+    max-height: 90%;
+    /* Definir una altura máxima para el modal */
+    overflow: auto;
+    /* Agregar desplazamiento si el contenido es demasiado grande */
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $color-blanco;
+    text-decoration: none;
+    z-index: 1;
+    /* Asegurar que esté por encima del contenido del modal */
+}
+
+.modal video {
+    width: 100%;
+    height: auto;
+}
+
+#modal-video:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloservicio {
+    padding: 20px;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    color: $color-blanco;
+
+    .section {
+        flex: 1.0 auto;
+        max-width: 500px;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(218, 165, 32, 0.9);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            margin: 20px;
+        }
+    }
+}
+
+#carouselExampleIndicators {
+    .carousel-item img {
+        width: 100%;
+
+        /* Establece un ancho del 100% para que las imágenes no se desborden */
+        height: auto;
+
+        /* Altura automática para mantener la relación de aspecto */
+        max-height: 400px;
+
+        /* Establece una altura máxima */
+        object-fit: contain;
+
+        /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
+    }
+
+    max-width: 800px;
+
+    /* Establece un ancho máximo para el carrusel */
+    margin: 0 auto;
+
+    /* Centra el carrusel horizontalmente */
+    padding: 20px;
+}
+
+/* Estilos para las flechas del carrusel */
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    /* Asegura que las flechas estén por encima del carrusel */
+}
+
+.carousel-control-prev {
+    left: -80px;
+
+    /* Ajusta la posición de la flecha izquierda */
+}
+
+.carousel-control-next {
+    right: -80px;
+
+    /* Ajusta la posición de la flecha derecha */
+}
+
+
+.cuadros {
+    margin: 15px;
+
+    /* Agrega un margen exterior de 20px alrededor del contenedor */
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        /* Crear columnas de tamaño variable */
+        grid-gap: 20px;
+
+        /* Espacio entre las tarjetas */
+        overflow-x: auto;
+
+        /* Permitir el desplazamiento horizontal */
+        padding: 10px;
+    }
+}
+
+.service-card {
+    background-color: #ffffff;
+
+    /* Cambia el color de fondo */
+    border-radius: 15px;
+
+    /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    /* Sombra */
+    transition: box-shadow 0.3s ease;
+
+    /* Transición suave de la sombra */
+
+    &:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+
+        /* Aumenta la sombra en hover */
+    }
+
+    h3 {
+        font-size: 1.5em;
+
+        /* Tamaño de fuente más grande */
+        margin-bottom: 15px;
+
+        /* Espacio entre el título y el párrafo */
+        color: $color-dorado;
+
+        /* Color del texto */
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+
+        /* Tamaño de fuente más grande */
+        color:$color-negro;
+
+        /* Color del texto */
+        text-align: center;
+    }
+}
