@@ -234,12 +234,12 @@ ul {
 }
 
 .carousel-control-prev {
-  left: -80px;
+  left: -3px;
   /* Ajusta la posición de la flecha izquierda */
 }
 
 .carousel-control-next {
-  right: -80px;
+  right: -3px;
   /* Ajusta la posición de la flecha derecha */
 }
 
