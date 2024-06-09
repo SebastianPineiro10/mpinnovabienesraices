@@ -1,3 +1,7 @@
+.texto p {
+    padding: 10px;
+    text-align: left;
+}
 .history {
     width: 100%;
     height: 100vh;
@@ -6,6 +10,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    // Estilos para los títulos y párrafos dentro de .history
+    h1, h2, p {
+        padding: 15px; // Agrega espacio dentro del borde
+    }
 }
 
 .texto p {
