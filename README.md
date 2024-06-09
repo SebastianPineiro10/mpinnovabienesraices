@@ -18,7 +18,7 @@ MpInnovaCoderNew es el sitio web oficial de MpInnova, una inmobiliaria especiali
 
 - HTML5
 - CSS3 (utilizando SCSS)
-- JavaScript
+
 
 ## Instalación
 
