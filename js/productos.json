@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Hermosa Casa en Venta con Alberca",
+        "location": "Campos Eliseos",
+        "price": 11000000,
+        "image": "../imagenes/grid1.jpg"
+    },
+    {
+        "name": "Residencia en Venta en Privilegiada Ubicación",
+        "location": "Campos Eliseos lll.",
+        "price": 10700000,
+        "image": "../imagenes/grid2.jpg"
+    },
+    {
+        "name": "Hermosa Residencia en Misión de los Lagos",
+        "location": "Misión de los Lagos.",
+        "price": 10900000,
+        "image": "../imagenes/grid3.jpg"
+    },
+    {
+        "name": "Se Vende Hermosa Propiedad",
+        "location": "Gardeno Residencial.",
+        "price": 3250000,
+        "image": "../imagenes/grid6.jpg"
+    }
+]

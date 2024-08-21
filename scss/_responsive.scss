@@ -1,111 +1,98 @@
 @media only screen and (max-width: 480px) {
-    .propiedades-destacadas {
-        flex-direction: column;
-        align-items: center;
+    .catalog {
+        grid-template-columns: 1fr; /* Una columna para centrar las tarjetas en pantallas pequeñas */
     }
 
-    .propiedades-destacadas div {
-        width: 90%;
+    .cart-section {
+        max-width: 90%;
         margin: 10px auto;
     }
 
-    .catalog {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #cart-items {
+        max-height: 200px;
     }
 
-    .product {
-        max-width: 90%;
-        margin: 10px 0;
+    #checkout, #clear-cart {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+        font-size: 1em;
     }
 }
 
+/* Responsividad para pantallas pequeñas a medianas (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .catalog {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño flexible */
-        grid-gap: 10px;
-        justify-items: center; /* Centra las tarjetas horizontalmente */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
-    .product {
-        width: 100%; /* Ajusta el ancho al 100% del contenedor */
-        max-width: none; /* Elimina el ancho máximo para permitir que las tarjetas ocupen todo el ancho */
+    .cart-section {
+        max-width: 95%;
+        margin: 15px auto;
+    }
+
+    #cart-items {
+        max-height: 250px;
+    }
+
+    #checkout, #clear-cart {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
     }
 }
 
-/* Estilos para dispositivos con una anchura de hasta 979px (tablets y monitores pequeños) */
+/* Responsividad para pantallas medianas (768px - 979px) */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .catalog {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en dispositivos medianos */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .cart-section {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    #checkout, #clear-cart {
+        width: auto;
+        margin-right: 10px;
+        font-size: 1.1em;
     }
 }
 
-
-@media only screen and (min-width: 1201px) {
-    /* Agrega estilos específicos para pantallas grandes aquí */
-    .container {
-        max-width: 1140px;
-    }
-    .navbar-nav {
-        margin-left: auto;
-    }
-    .catalog {
-        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en monitores grandes */
-    }
-}
-
-/* Estilos para pantallas medianas (980px - 1200px) */
+/* Responsividad para pantallas grandes (980px - 1200px) */
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
-    /* Agrega estilos específicos para pantallas medianas aquí */
-    .container {
-        max-width: 960px;
-    }
     .catalog {
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas en monitores medianos */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .cart-section {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    #checkout, #clear-cart {
+        width: auto;
+        margin-right: 10px;
     }
 }
 
-/* Estilos para pantallas medianas (768px - 979px) */
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-    /* Agrega estilos específicos para pantallas medianas aquí */
-    .container {
-        max-width: 720px;
-    }
-}
-
-/* Estilos para pantallas pequeñas (481px - 767px) */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    /* Agrega estilos específicos para pantallas pequeñas aquí */
-    .container {
-        max-width: 100%;
-    }
-    .navbar-nav {
-        margin-left: auto;
-    }
-}
-
-
-@media only screen and (max-width: 320px) {
-    /* Agrega estilos específicos para pantallas muy pequeñas aquí */
-
-    /* Estilos para la clase .catalog */
+/* Responsividad para pantallas extra grandes (1200px y más) */
+@media only screen and (min-width: 1200px) {
     .catalog {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
-    /* Estilos para la clase .product */
-    .product {
-        max-width: 90%;
-        margin: 10px 0;
+    .cart-section {
+        max-width: 70%;
+        margin: 20px auto;
     }
 
-    /* Copia y pega las reglas de los otros media queries y ajusta según sea necesario */
+    #checkout, #clear-cart {
+        width: auto;
+        margin-right: 10px;
+    }
 }
-
 
 /* Media queries para la página de visión */
 @media only screen and (min-width: 1201px) {

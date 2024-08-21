@@ -279,16 +279,9 @@ ul {
 .service-card h3 {
   font-size: 1.5em;
   /* Tamaño de fuente más grande */
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   /* Espacio entre el título y el párrafo */
   color: goldenrod;
-  /* Color del texto */
-  text-align: center;
-}
-.service-card p {
-  font-size: 16px;
-  /* Tamaño de fuente más grande */
-  color: black;
   /* Color del texto */
   text-align: center;
 }
@@ -345,92 +338,179 @@ main h1, main h2, main p {
   text-align: left;
 }
 
-.propiedades-destacadas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* Estilos generales para los contenedores */
+.catalog,
+.cart-section {
+  max-width: 1200px; /* Asegura que ambos contenedores tengan el mismo ancho máximo */
+  margin: 20px auto; /* Centra ambos contenedores horizontalmente */
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho */
 }
-.propiedades-destacadas div {
-  margin: 5px;
-  border: double grey 3px;
-}
-.propiedades-destacadas img {
-  width: 300px;
-  /* Tamaño deseado para las imágenes */
-  height: 300px;
-  /* Alto fijo para todas las imágenes */
-  object-fit: cover;
-  /* Escalar la imagen para cubrir el contenedor sin distorsión */
-  opacity: 0.4;
-  transition: opacity 0.3s;
-  /* Transición suave de opacidad */
-}
-.propiedades-destacadas div:hover {
-  border: solid white 3px;
-}
-.propiedades-destacadas img:hover {
-  opacity: 1;
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; /* Centra los elementos en el contenedor */
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .product {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  border: 1px solid #ccc;
-  max-width: 300px;
-  /* Ancho máximo del producto */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: none;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  border: 3px double grey;
+  margin: 5px;
+  max-width: 300px; /* Limita el ancho máximo de las tarjetas */
 }
-
-.catalog {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 20px;
-  overflow-x: auto;
-  margin-top: 20px;
-  /* Ajusta según sea necesario */
+.product:hover {
+  transform: translateY(-10px);
+  border: 3px solid white;
 }
-
 .product img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.product img:hover {
+  opacity: 1;
 }
 
 .product-info {
-  padding: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
 }
 .product-info h2 {
-  margin-top: 5px;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #333;
 }
 .product-info p {
-  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
 }
 .product-info span {
   display: block;
   font-weight: bold;
+  font-size: 1em;
+  color: #e91e63;
   margin-top: 10px;
-  font-size: 0.8em;
 }
 
-.product img {
-  width: 300px;
-  /* Ancho fijo para la imagen */
-  height: 300px;
-  /* Alto fijo para la imagen */
-  object-fit: cover;
-  /* Escalar la imagen para cubrir el contenedor sin distorsión */
-}
-
-.boton {
-  color: black;
-  font-size: 16px;
-  padding: 15px;
+.add-to-cart {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+  font-size: 1em;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
   text-align: center;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+}
+.add-to-cart:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
 
-.card {
-  max-width: 90%;
-  margin: 10px auto;
-  /* Centra horizontalmente */
+.cart-section {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: black;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.cart-section #cart-items {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.cart-section #total-price {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+.cart-section #checkout, .cart-section #clear-cart {
+  border: 1px solid transparent;
+  font-size: 1.1em;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.cart-section #checkout:hover, .cart-section #clear-cart:hover {
+  background-color: #ddd;
+}
+.cart-section #checkout {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+.cart-section #checkout:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.cart-section #clear-cart {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+.cart-section #clear-cart:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.cart-item .cart-item-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.cart-item .cart-item-details p {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+}
+.cart-item .cart-item-details p.name {
+  font-weight: bold;
+  color: #333;
+}
+.cart-item .cart-item-details p.price {
+  color: #e91e63;
 }
 
 .formulario {
@@ -562,95 +642,83 @@ main h1, main h2, main p {
 }
 
 @media only screen and (max-width: 480px) {
-  .propiedades-destacadas {
-    flex-direction: column;
-    align-items: center;
+  .catalog {
+    grid-template-columns: 1fr; /* Una columna para centrar las tarjetas en pantallas pequeñas */
   }
-  .propiedades-destacadas div {
-    width: 90%;
+  .cart-section {
+    max-width: 90%;
     margin: 10px auto;
   }
-  .catalog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #cart-items {
+    max-height: 200px;
   }
-  .product {
-    max-width: 90%;
-    margin: 10px 0;
+  #checkout, #clear-cart {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+    font-size: 1em;
   }
 }
+/* Responsividad para pantallas pequeñas a medianas (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .catalog {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de tamaño flexible */
-    grid-gap: 10px;
-    justify-items: center; /* Centra las tarjetas horizontalmente */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
-  .product {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
-    max-width: none; /* Elimina el ancho máximo para permitir que las tarjetas ocupen todo el ancho */
+  .cart-section {
+    max-width: 95%;
+    margin: 15px auto;
+  }
+  #cart-items {
+    max-height: 250px;
+  }
+  #checkout, #clear-cart {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
   }
 }
-/* Estilos para dispositivos con una anchura de hasta 979px (tablets y monitores pequeños) */
+/* Responsividad para pantallas medianas (768px - 979px) */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   .catalog {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas en dispositivos medianos */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .cart-section {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  #checkout, #clear-cart {
+    width: auto;
+    margin-right: 10px;
+    font-size: 1.1em;
   }
 }
-@media only screen and (min-width: 1201px) {
-  /* Agrega estilos específicos para pantallas grandes aquí */
-  .container {
-    max-width: 1140px;
-  }
-  .navbar-nav {
-    margin-left: auto;
-  }
-  .catalog {
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en monitores grandes */
-  }
-}
-/* Estilos para pantallas medianas (980px - 1200px) */
+/* Responsividad para pantallas grandes (980px - 1200px) */
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
-  /* Agrega estilos específicos para pantallas medianas aquí */
-  .container {
-    max-width: 960px;
-  }
   .catalog {
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas en monitores medianos */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .cart-section {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  #checkout, #clear-cart {
+    width: auto;
+    margin-right: 10px;
   }
 }
-/* Estilos para pantallas medianas (768px - 979px) */
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  /* Agrega estilos específicos para pantallas medianas aquí */
-  .container {
-    max-width: 720px;
-  }
-}
-/* Estilos para pantallas pequeñas (481px - 767px) */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* Agrega estilos específicos para pantallas pequeñas aquí */
-  .container {
-    max-width: 100%;
-  }
-  .navbar-nav {
-    margin-left: auto;
-  }
-}
-@media only screen and (max-width: 320px) {
-  /* Agrega estilos específicos para pantallas muy pequeñas aquí */
-  /* Estilos para la clase .catalog */
+/* Responsividad para pantallas extra grandes (1200px y más) */
+@media only screen and (min-width: 1200px) {
   .catalog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
-  /* Estilos para la clase .product */
-  .product {
-    max-width: 90%;
-    margin: 10px 0;
+  .cart-section {
+    max-width: 70%;
+    margin: 20px auto;
   }
-  /* Copia y pega las reglas de los otros media queries y ajusta según sea necesario */
+  #checkout, #clear-cart {
+    width: auto;
+    margin-right: 10px;
+  }
 }
 /* Media queries para la página de visión */
 @media only screen and (min-width: 1201px) {

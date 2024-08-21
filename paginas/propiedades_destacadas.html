@@ -4,224 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Inventario Disponible">
-  
     <link rel="icon" type="image/png" href="../imagenes/favicon.ico">
-    <title>Mp Innova Bienes Raices | Propiedades Destacadas</title> 
+    <title>Mp Innova Bienes Raices | Propiedades Destacadas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Agrega FontAwesome para los íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Agrega tu estilo personalizado -->
-    
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../Fuentes/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/style.css"> 
 </head>
 <body>
     <header>
+      
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo" src="../imagenes/LOGODORADO02 (4).png" alt="Logo Mp Innova Bienes Raices">
-                </a>
-            
-            <!-- Botón hamburguesa -->
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../imagenes/LOGODORADO02 (4).png" alt="Logo Mp Innova Bienes Raices">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Contenido del menú -->
             <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto navbar-dark">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Filosofía 
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filosofía</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="./mision.html">Misión</a>
                             <a class="dropdown-item" href="./vision.html">Visión</a>
                             <a class="dropdown-item" href="./valores.html">Valores</a>
                         </div>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./quienes_somos.html">Quiénes somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./propiedades_destacadas.html">Propiedades destacadas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/bienesraicesd" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/mp_innova_bienesraices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./quienes_somos.html">Quiénes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./propiedades_destacadas.html">Propiedades destacadas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/bienesraicesd" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.instagram.com/mp_innova_bienesraices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="nav-link" href="#" id="cart-link">
+                            <i class="fas fa-shopping-cart"></i> 
+                            <span id="cart-count" class="badge badge-pill badge-light">0</span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
+    </header>
 
-        
-    </header> 
+    <main>
+        <h1>Mp Innova Bienes Raices</h1>
+        <h2>Propiedades destacadas</h2>
+        <h6>Ciudad Juarez, Chih.</h6>
 
-
-
-        <main>
-            <h1>Mp Innova Bienes Raices</h1>
-            <h2>Propiedades destacadas</h2>
-            <h6>Ciudad Juarez,Chih.</h6>
-        
-
-        <div class="propiedades-destacadas">
-            
-    
-            <div>
-                <img src="../imagenes/altozano.jpg" alt="propiedad uno">
-            </div>
-            <div>
-                <img src="../imagenes/421941922_780873587390905_5231759625241590474_n.jpg" alt="propiedad dos">
-            </div>
-            <div>
-                <img src="../imagenes/424937221_788890909922506_1845828247416340937_n.jpg" alt="propiedad tres">
-            </div>
-            <div>
-                <img src="../imagenes/424961149_789864276491836_5125983465589226236_n.jpg" alt="propiedad cuatro">
-            </div>
-            <div>
-                <img src="../imagenes/428490991_793282039483393_2143343638451462463_n.jpg" alt="propiedad cinco">
-            </div>
-            <div>
-                <img src="../imagenes/432308269_800151822129748_8278494319800356187_n.jpg" alt="propiedad seis">
-            </div>
-            <div>
-                <img src="../imagenes/432397648_801177305360533_4249600205505589700_n.jpg" alt="propiedad siete">
-            </div>
-            <div>
-                <img src="../imagenes/432767589_806034438208153_299837334694829872_n.jpg" alt="propiedad ocho">
-            </div>
-            <div>
-                <img src="../imagenes/434217101_809615024516761_3402099431840289479_n.jpg" alt="propiedad nueve">
-            </div>
-            <div>
-                <img src="../imagenes/436305860_823289433149320_2253920034335299683_n.jpg" alt="propiedad diez">
-            </div>
-            <div>
-                <img src="../imagenes/438094783_822213079923622_5096460498622847643_n.jpg" alt="propiedad once">
-            </div>
-            <div>
-                <img src="../imagenes/439033044_822285773249686_4676148333212096286_n.jpg" alt="propiedad doce">
-            </div>
-
-
-            <div class="catalog">
-                <div class="product">
-                  <img src="../imagenes/grid1.jpg" alt="Producto 1">
-                  <div class="product-info">
-                    <h2>🎊HERMOSA CASA EN VENTA CON ALBERCA🎊</h2>
-                    <p>📍Ubicacion: Campos Eliseos</p>
-                    <span>💵Venta: $11,000,000 MXN</span>
-                  </div>
+        <div class="catalog">
+            <div class="product">
+                <img src="../imagenes/grid1.jpg" alt="Hermosa Casa en Venta con Alberca">
+                <div class="product-info">
+                    <h2>HERMOSA CASA EN VENTA CON ALBERCA</h2>
+                    <p>📍Ubicación: Campos Eliseos</p>
+                    <span>$11,000,000 MXN</span>
+                    <button class="btn btn-primary add-to-cart" data-name="Hermosa Casa en Venta con Alberca" data-price="11000000" data-img="../imagenes/grid1.jpg">Agregar al carrito</button>
                 </div>
-                <div class="product">
-                  <img src="../imagenes/grid2.jpg" alt=" alt="Producto 2">
-                  <div class="product-info">
-                    <h2>🎊RESIDENCIA EN VENTA EN PRIVILEGIADA UBICACION🎊</h2>
+            </div>
+            <div class="product">
+                <img src="../imagenes/grid2.jpg" alt="Residencia en Venta en Privilegiada Ubicación">
+                <div class="product-info">
+                    <h2>RESIDENCIA EN VENTA EN PRIVILEGIADA UBICACION</h2>
                     <p>📍Ubicación: Campos Eliseos lll.</p>
-                    <span>💵Venta: $10,700,000MXN</span>
-                  </div>
+                    <span>$10,700,000 MXN</span>
+                    <button class="btn btn-primary add-to-cart" data-name="Residencia en Venta en Privilegiada Ubicación" data-price="10700000" data-img="../imagenes/grid2.jpg">Agregar al carrito</button>
                 </div>
-                <div class="product">
-                  <img src="../imagenes/grid3.jpg" alt="Producto 3">
-                  <div class="product-info">
-                    <h2>🎊HERMOSA RESIDENCIA EN MISION DE LOS LAGOS🎊</h2>
-                    <p>📍Ubicación: Mision De Los Lagos.</p>
-                    <span>💵Venta: $10,900,000 MXN</span>
-                  </div>
+            </div>
+            <div class="product">
+                <img src="../imagenes/grid3.jpg" alt="Hermosa Residencia en Misión de los Lagos">
+                <div class="product-info">
+                    <h2>HERMOSA RESIDENCIA EN MISION DE LOS LAGOS</h2>
+                    <p>📍Ubicación: Misión de los Lagos.</p>
+                    <span>$10,900,000 MXN</span>
+                    <button class="btn btn-primary add-to-cart" data-name="Hermosa Residencia en Misión de los Lagos" data-price="10900000" data-img="../imagenes/grid3.jpg">Agregar al carrito</button>
                 </div>
-                <div class="product">
-                  <img src="../imagenes/grid6.jpg" alt="Producto 4">
-                  <div class="product-info">
-                    <h2>🎊SE VENDE HERMOSA PROPIEDAD🎊</h2>
-                    <p>📍Ubicacion: Gardeno Residencial.</p>
-                    <span>💵Venta: $3,250,000 MXN</span>
-                  </div>
-                </div>
-        </main>
-        <div class="boton">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem; border: 2px solid goldenrod;">
-                        <div class="card-body">
-                            <h5 class="card-title">Contacto</h5>
-                            <p class="card-text">Para más información, contáctanos.</p>
-                            <a href="../paginas/contacto.html" class="btn btn-primary">Contacto</a>
-                            <a href="tel:+526562366912" class="btn btn-link"><i class="fas fa-phone-alt"></i> Llamar</a>
-                </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="product">
+                <img src="../imagenes/grid6.jpg" alt="Se Vende Hermosa Propiedad">
+                <div class="product-info">
+                    <h2>SE VENDE HERMOSA PROPIEDAD</h2>
+                    <p>📍Ubicación: Gardeno Residencial.</p>
+                    <span>$3,250,000 MXN</span>
+                    <button class="btn btn-primary add-to-cart" data-name="Se Vende Hermosa Propiedad" data-price="3250000" data-img="../imagenes/grid6.jpg">Agregar al carrito</button>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <ul class="social-icon">
-              <li class="icon-elem">
-                <a href="https://www.youtube.com/@mpinnovabienesraices7649" class="icon">
-                  <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-              </li>
-              <li class="icon-elem">
-                <a href="https://www.instagram.com/mp_innova_bienesraices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" class="icon">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-              <li class="icon-elem">
-                <a href="https://api.whatsapp.com/send?phone=526562366912" class="icon">
-                  <ion-icon name="logo-whatsapp"></ion-icon>
-                </a>
-              </li>
-              <li class="icon-elem">
-                <a href="https://www.facebook.com/bienesraicesd" class="icon">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-              <li class="icon-elem">
-                <a href="./contacto.html" class="icon">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </a>
-              </li>
-            </ul>
-            <ul class="menu">
-              <li class="menu-elem">
-                <a class="menu-icon" href="../index.html" > Inicio </a>
-              </li>
-              <li class="menu-elem">
-                <a class="menu-icon" href="mision.html" > Mision </a>
-              </li>
-              <li class="menu-elem">
-                <a class="menu-icon" href="vision.html" > Vision </a>
-              </li>
-              <li class="menu-elem">
-                <a class="menu-icon" href="valores.html" > Valores </a>
-              </li>
-              <li class="menu-elem">
-                <a class="menu-icon" href="contacto.html" > Contacto </a>
-              </li>
-              <li class="menu-elem">
-                <a class="menu-icon" href="quienes_somos.html" > Quienes somos </a>
-              </li>
-              <li class="menu-elem">
-                <a class="menu-icon" href="propiedades_destacadas.html" > Propiedades destacadas </a>
-              </li>
-            </ul>
-            <p class="text">2024 | Todos los derechos reservados</p>
-          </footer>
-          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        
-    
-    
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+
+        <div class="cart-section">
+            <h3>Carrito de compras</h3>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: $0.00</p>
+            <button id="checkout" class="btn btn-success">Finalizar compra</button>
+            <button id="clear-cart" class="btn btn-danger">Vaciar carrito</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="icon-elem">
+          <a href="https://www.youtube.com/@mpinnovabienesraices7649" class="icon">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://www.instagram.com/mp_innova_bienesraices?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" class="icon">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://api.whatsapp.com/send?phone=526562366912" class="icon">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://www.facebook.com/bienesraicesd" class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="./paginas/contacto.html" class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-elem">
+          <a class="menu-icon" href="../index.html" > Inicio </a>
+        </li>
+        <li class="menu-elem">
+          <a class="menu-icon" href="../paginas/mision.html" > Mision </a>
+        </li>
+        <li class="menu-elem">
+          <a class="menu-icon" href="../paginas/vision.html" > Vision </a>
+        </li>
+        <li class="menu-elem">
+          <a class="menu-icon" href="../paginas/valores.html" > Valores </a>
+        </li>
+        <li class="menu-elem">
+          <a class="menu-icon" href="../paginas/contacto.html" > Contacto </a>
+        </li>
+        <li class="menu-elem">
+          <a class="menu-icon" href="../paginas/quienes_somos.html" > Quienes somos </a>
+        </li>
+        <li class="menu-elem">
+          <a class="menu-icon" href="./paginas/propiedades_destacadas.html" > Propiedades destacadas </a>
+        </li>
+      </ul>
+      <p class="text">2024 | Todos los derechos reservados</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/carts.js"></script>
 </body>
 </html>
