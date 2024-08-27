@@ -1,3 +1,71 @@
+.video-carousel-section {
+    padding: 20px;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Dos columnas por defecto
+        gap: 20px;
+        background: rgba(128, 128, 128, 0.2); // Gris transparente llamativo
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .video-container {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.9); // Fondo blanco semi-transparente
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex; // Centra el contenido del video
+        align-items: center; // Centra verticalmente
+        justify-content: center; // Centra horizontalmente
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 200px; // Altura mínima para asegurar visibilidad
+            aspect-ratio: 16 / 9; // Mantiene la relación de aspecto del video
+            object-fit: cover; // Asegura que el video cubra el contenedor
+        }
+    }
+
+    .carousel-container {
+        border-radius: 10px;
+        padding: 20px;
+        overflow: hidden;
+
+        #carouselExampleIndicators {
+            width: 100%; // Ajusta el ancho al 100% del contenedor
+            max-width: 100%; // No excede el ancho del contenedor
+
+            .carousel-item img {
+                width: 100%;
+                height: auto;
+                max-height: 300px; // Ajusta la altura máxima de la imagen para evitar estiramiento excesivo
+                object-fit: cover; // Ajusta la imagen para que cubra el contenedor
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            filter: invert(1); // Mejora la visibilidad en fondos oscuros
+        }
+
+        .carousel-control-prev {
+            left: 10px;
+        }
+
+        .carousel-control-next {
+            right: 10px;
+        }
+    }
+}
+
+
+/* Estilos para la sección .lujo */
 .lujo {
     width: 100%;
     height: 100vh;
@@ -6,43 +74,91 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    position: relative; /* Necesario para posicionar los servicios sobre la imagen */
 }
 
-
-.container {
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    color: $color-blanco;
-
-    section {
-        width: 100%;
-        max-width: 900px;
-        padding: 20px;
-    }
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 20px; /* Espacio alrededor de los servicios */
+    box-sizing: border-box;
 }
 
+.servicios-section {
+    text-align: center;
+}
 
+.servicios-section h2 {
+    color: #fff; /* Cambia a tu color blanco específico si es necesario */
+    margin-bottom: 20px;
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaciado entre los servicios */
+}
+
+.service {
+    max-width: 300px;
+    padding: 20px;
+    background-color:  rgba(128, 128, 128, 0.2);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1; /* Asegura que los servicios estén por encima del fondo */
+}
+
+.service i {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+.service h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #fff; /* Cambia a tu color blanco específico si es necesario */
+}
+
+.service:hover {
+    transform: scale(1.05); /* Efecto de hover más sutil */
+}
+
+/* Estilos para la sección .socios */
 .socios {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    section {
-        width: 100%;
-        max-width: 12000px;
-        padding: 200px;
-    }
-
-    video {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
 }
 
+.socios section {
+    width: 100%;
+    max-width: 12000px;
+    padding: 200px;
+}
+
+.socios video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el modal */
 .modal {
     position: fixed;
     top: 50%;
@@ -53,24 +169,20 @@
     border-radius: 10px;
     display: none;
     max-width: 90%;
-    /* Definir un ancho máximo para el modal */
     max-height: 90%;
-    /* Definir una altura máxima para el modal */
     overflow: auto;
-    /* Agregar desplazamiento si el contenido es demasiado grande */
 }
 
 .modal-close {
     position: absolute;
     top: 10px;
     right: 10px;
-    color: $color-blanco;
+    color: #fff; /* Cambia a tu color blanco específico si es necesario */
     text-decoration: none;
     z-index: 1;
-    /* Asegurar que esté por encima del contenido del modal */
 }
 
-.modal video {
+.modal iframe {
     width: 100%;
     height: auto;
 }
@@ -81,139 +193,19 @@
     align-items: center;
 }
 
+/* Estilos para la sección tituloservicio */
 .tituloservicio {
     padding: 20px;
-
-    h2 {
-        text-align: center;
-    }
 }
 
-
-.servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    color: $color-blanco;
-
-    .section {
-        flex: 1.0 auto;
-        max-width: 500px;
-        padding: 20px;
-        margin: 20px;
-        background-color: rgba(218, 165, 32, 0.9);
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: scale(1.1);
-            margin: 20px;
-        }
-    }
+.tituloservicio h2 {
+    text-align: center;
 }
-
-#carouselExampleIndicators {
-    .carousel-item img {
-        width: 100%;
-
-        /* Establece un ancho del 100% para que las imágenes no se desborden */
-        height: auto;
-
-        /* Altura automática para mantener la relación de aspecto */
-        max-height: 400px;
-
-        /* Establece una altura máxima */
-        object-fit: contain;
-
-        /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
-    }
-
-    max-width: 800px;
-
-    /* Establece un ancho máximo para el carrusel */
-    margin: 0 auto;
-
-    /* Centra el carrusel horizontalmente */
-    padding: 20px;
+.container h4{
+     color: goldenrod;
+     padding: 16px;
 }
-
-/* Estilos para las flechas del carrusel */
-
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-
-    /* Asegura que las flechas estén por encima del carrusel */
+.container h6{
+    padding: 3px;
 }
-
-.carousel-control-prev { 
-    left: -3px;
-
-    /* Ajusta la posición de la flecha izquierda */
-}
-
-.carousel-control-next {
-    right: -3px;
-
-    /* Ajusta la posición de la flecha derecha */
-}
-
-
-.cuadros {
-    margin: 15px;
-
-    /* Agrega un margen exterior de 20px alrededor del contenedor */
-
-    .row {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-        /* Crear columnas de tamaño variable */
-        grid-gap: 20px;
-
-        /* Espacio entre las tarjetas */
-        overflow-x: auto;
-
-        /* Permitir el desplazamiento horizontal */
-        padding: 10px;
-    }
-}
-
-.service-card {
-    background-color: #ffffff;
-
-    /* Cambia el color de fondo */
-    border-radius: 15px;
-
-    /* Bordes redondeados */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-
-    /* Sombra */
-    transition: box-shadow 0.3s ease;
-
-    /* Transición suave de la sombra */
-
-    &:hover {
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-
-        /* Aumenta la sombra en hover */
-    }
-
-    h3 {
-        font-size: 1.5em;
-
-        /* Tamaño de fuente más grande */
-        margin-bottom: 8px;
-
-        /* Espacio entre el título y el párrafo */
-        color: $color-dorado;
-
-        /* Color del texto */
-        text-align: center;
-    }
-
-}
-
+   

@@ -104,6 +104,64 @@ ul {
   text-align: center;
 }
 
+.video-carousel-section {
+  padding: 20px;
+}
+.video-carousel-section .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+.video-carousel-section .video-container {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-carousel-section .video-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.video-carousel-section .carousel-container {
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+.video-carousel-section .carousel-container #carouselExampleIndicators {
+  width: 100%;
+  max-width: 100%;
+}
+.video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+.video-carousel-section .carousel-container .carousel-control-prev,
+.video-carousel-section .carousel-container .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  filter: invert(1);
+}
+.video-carousel-section .carousel-container .carousel-control-prev {
+  left: 10px;
+}
+.video-carousel-section .carousel-container .carousel-control-next {
+  right: 10px;
+}
+
+/* Estilos para la sección .lujo */
 .lujo {
   width: 100%;
   height: 100vh;
@@ -112,30 +170,81 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  position: relative; /* Necesario para posicionar los servicios sobre la imagen */
 }
 
-.container {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  color: white;
-}
-.container section {
-  width: 100%;
-  max-width: 900px;
-  padding: 20px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para mejorar la legibilidad */
+  padding: 20px; /* Espacio alrededor de los servicios */
+  box-sizing: border-box;
 }
 
+.servicios-section {
+  text-align: center;
+}
+
+.servicios-section h2 {
+  color: #fff; /* Cambia a tu color blanco específico si es necesario */
+  margin-bottom: 20px;
+}
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaciado entre los servicios */
+}
+
+.service {
+  max-width: 300px;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.2);
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1; /* Asegura que los servicios estén por encima del fondo */
+}
+
+.service i {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #fff; /* Cambia a tu color blanco específico si es necesario */
+}
+
+.service:hover {
+  transform: scale(1.05); /* Efecto de hover más sutil */
+}
+
+/* Estilos para la sección .socios */
 .socios {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .socios section {
   width: 100%;
   max-width: 12000px;
   padding: 200px;
 }
+
 .socios video {
   width: 100%;
   max-width: 600px;
@@ -144,6 +253,7 @@ ul {
   margin: 0 auto;
 }
 
+/* Estilos para el modal */
 .modal {
   position: fixed;
   top: 50%;
@@ -154,24 +264,20 @@ ul {
   border-radius: 10px;
   display: none;
   max-width: 90%;
-  /* Definir un ancho máximo para el modal */
   max-height: 90%;
-  /* Definir una altura máxima para el modal */
   overflow: auto;
-  /* Agregar desplazamiento si el contenido es demasiado grande */
 }
 
 .modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: white;
+  color: #fff; /* Cambia a tu color blanco específico si es necesario */
   text-decoration: none;
   z-index: 1;
-  /* Asegurar que esté por encima del contenido del modal */
 }
 
-.modal video {
+.modal iframe {
   width: 100%;
   height: auto;
 }
@@ -182,108 +288,22 @@ ul {
   align-items: center;
 }
 
+/* Estilos para la sección tituloservicio */
 .tituloservicio {
   padding: 20px;
 }
+
 .tituloservicio h2 {
   text-align: center;
 }
 
-.servicios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  color: white;
-}
-.servicios .section {
-  flex: 1 auto;
-  max-width: 500px;
-  padding: 20px;
-  margin: 20px;
-  background-color: rgba(218, 165, 32, 0.9);
-  transition: transform 0.3s ease;
-}
-.servicios .section:hover {
-  transform: scale(1.1);
-  margin: 20px;
-}
-
-#carouselExampleIndicators {
-  max-width: 800px;
-  /* Establece un ancho máximo para el carrusel */
-  margin: 0 auto;
-  /* Centra el carrusel horizontalmente */
-  padding: 20px;
-}
-#carouselExampleIndicators .carousel-item img {
-  width: 100%;
-  /* Establece un ancho del 100% para que las imágenes no se desborden */
-  height: auto;
-  /* Altura automática para mantener la relación de aspecto */
-  max-height: 400px;
-  /* Establece una altura máxima */
-  object-fit: contain;
-  /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
-}
-
-/* Estilos para las flechas del carrusel */
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  /* Asegura que las flechas estén por encima del carrusel */
-}
-
-.carousel-control-prev {
-  left: -3px;
-  /* Ajusta la posición de la flecha izquierda */
-}
-
-.carousel-control-next {
-  right: -3px;
-  /* Ajusta la posición de la flecha derecha */
-}
-
-.cuadros {
-  margin: 15px;
-  /* Agrega un margen exterior de 20px alrededor del contenedor */
-}
-.cuadros .row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* Crear columnas de tamaño variable */
-  grid-gap: 20px;
-  /* Espacio entre las tarjetas */
-  overflow-x: auto;
-  /* Permitir el desplazamiento horizontal */
-  padding: 10px;
-}
-
-.service-card {
-  background-color: #ffffff;
-  /* Cambia el color de fondo */
-  border-radius: 15px;
-  /* Bordes redondeados */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  /* Sombra */
-  transition: box-shadow 0.3s ease;
-  /* Transición suave de la sombra */
-}
-.service-card:hover {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-  /* Aumenta la sombra en hover */
-}
-.service-card h3 {
-  font-size: 1.5em;
-  /* Tamaño de fuente más grande */
-  margin-bottom: 8px;
-  /* Espacio entre el título y el párrafo */
+.container h4 {
   color: goldenrod;
-  /* Color del texto */
-  text-align: center;
+  padding: 16px;
+}
+
+.container h6 {
+  padding: 3px;
 }
 
 main h1, main h2, main p {
@@ -1168,6 +1188,209 @@ main h1, main h2, main p {
   .mapa {
     padding-bottom: 35vw;
     max-width: 100%; /* Ajuste para el ancho completo */
+  }
+}
+@media only screen and (max-width: 320px) {
+  .servicios {
+    flex-direction: row; /* Mantiene los elementos en fila */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    padding: 5px;
+  }
+  .service {
+    flex: 0 0 auto;
+    max-width: 100%; /* Ajusta el ancho máximo al 100% */
+    font-size: 12px;
+    margin: 5px;
+  }
+  .service i {
+    font-size: 30px;
+  }
+  .service h3 {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .servicios {
+    flex-direction: row; /* Mantiene los elementos en fila */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    padding: 10px;
+  }
+  .service {
+    flex: 0 0 auto;
+    max-width: 100%; /* Ajusta el ancho máximo al 100% */
+    font-size: 14px;
+    margin: 10px;
+  }
+  .service i {
+    font-size: 35px;
+  }
+  .service h3 {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .servicios {
+    flex-direction: row; /* Mantiene los elementos en fila */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    padding: 20px;
+  }
+  .service {
+    flex: 0 0 auto;
+    max-width: 45%; /* Ajusta el ancho máximo al 45% */
+    font-size: 16px;
+    margin: 15px;
+  }
+  .service i {
+    font-size: 40px;
+  }
+  .service h3 {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .servicios {
+    flex-direction: row; /* Mantiene los elementos en fila */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    padding: 30px;
+  }
+  .service {
+    flex: 0 0 auto;
+    max-width: 30%; /* Ajusta el ancho máximo al 30% */
+    font-size: 18px;
+    margin: 20px;
+  }
+  .service i {
+    font-size: 45px;
+  }
+  .service h3 {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .servicios {
+    flex-direction: row; /* Mantiene los elementos en fila */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    padding: 40px;
+  }
+  .service {
+    flex: 0 0 auto;
+    max-width: 22%; /* Ajusta el ancho máximo al 22% */
+    font-size: 20px;
+    margin: 20px;
+  }
+  .service i {
+    font-size: 50px;
+  }
+  .service h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .video-carousel-section .grid-container {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+  .video-carousel-section .video-container iframe {
+    min-height: 150px;
+  }
+  .video-carousel-section .carousel-container {
+    padding: 5px;
+  }
+  .video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+    max-height: 150px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .video-carousel-section .grid-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .video-carousel-section .video-container iframe {
+    min-height: 200px;
+  }
+  .video-carousel-section .carousel-container {
+    padding: 10px;
+  }
+  .video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+    max-height: 200px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .video-carousel-section .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .video-carousel-section .video-container iframe {
+    min-height: 250px;
+  }
+  .video-carousel-section .carousel-container {
+    padding: 15px;
+  }
+  .video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+    max-height: 250px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .video-carousel-section .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .video-carousel-section .video-container iframe {
+    min-height: 300px;
+  }
+  .video-carousel-section .carousel-container {
+    padding: 20px;
+  }
+  .video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+    max-height: 300px;
+  }
+}
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .video-carousel-section .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .video-carousel-section .video-container iframe {
+    min-height: 350px;
+    max-height: 100%;
+  }
+  .video-carousel-section .carousel-container {
+    padding: 20px;
+  }
+  .video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+    max-height: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .video-carousel-section .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
+  .video-carousel-section .video-container iframe {
+    min-height: 400px;
+    max-height: 100%;
+  }
+  .video-carousel-section .carousel-container {
+    padding: 30px;
+  }
+  .video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+    max-height: 400px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .video-carousel-section .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .video-carousel-section .video-container iframe {
+    min-height: 300px;
+    max-height: 100%;
+  }
+  .video-carousel-section .carousel-container {
+    padding: 20px;
+  }
+  .video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
   }
 }
 
