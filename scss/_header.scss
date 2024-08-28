@@ -1,12 +1,12 @@
 @mixin estilo-redes-sociales {
-    color: #ffffff; /* Color blanco para los iconos */
-    transition: color 0.3s ease; /* Transición suave del color */
-    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
-    border-radius: 50%; /* Redondea los bordes para un aspecto más suave */
-    padding: 5px; /* Añade un poco de espacio alrededor de los iconos */
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%; 
+    padding: 5px; 
 
     &:hover {
-        color: #ffcc00; /* Color amarillo al pasar el mouse */
+        color: #ffcc00; 
     }
 }
 header div {
@@ -16,13 +16,13 @@ header div {
 h1 {
     color: $color-dorado;
     text-align: center;
-    padding: 33px;
+    padding: 20px;
 }
 
 h2 {
     color: $color-dorado;
     text-align: left;
-    padding: 15px;
+    padding: 20px;
 }
 
 h6 {
@@ -31,6 +31,10 @@ h6 {
 }
 p {
     font-size: 18px;
+    padding: 10px;
+}
+h4 {
+    padding: 18px;
 }
 .logo {
     border-radius: 50%;
@@ -38,7 +42,7 @@ p {
     display: block;
     margin: 0 auto 0 60px;
 
-    /* Esta línea centra la imagen horizontalmente y le agrega un margen de 50px a la derecha */
+    
 }
 
 ul {
@@ -70,35 +74,38 @@ ul {
 .dropdown-menu {
     background-color: #343a40;
 
-    /* Cambia el color de fondo a coincidir con el color de la barra de navegación */
+    
 
     .dropdown-item {
         color: $color-blanco;
 
-        /* Cambia el color del texto a blanco */
+        
         font-size: 17px;
 
         &:hover {
             background-color: $color-dorado;
 
-            /* Cambia el color de fondo al pasar el mouse */
+            
         }
     }
 }
 
 .navbar {
     justify-content: center;
+    
+    
 
-    /* Centra los elementos de la barra de navegación */
+    
 }
 
 .navbar-nav .nav-link {
     font-size: 18px;
 
-    /* Ajusta el tamaño de la fuente de los enlaces */
+    
     margin-right: 62px;
 }
 .menu collapse navbar-collapse {
     text-align: center;
 }
+
 

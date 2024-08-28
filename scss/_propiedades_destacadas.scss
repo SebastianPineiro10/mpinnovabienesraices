@@ -1,10 +1,9 @@
-/* Estilos generales para los contenedores */
 .catalog,
 .cart-section {
-    max-width: 1200px; /* Asegura que ambos contenedores tengan el mismo ancho máximo */
-    margin: 20px auto; /* Centra ambos contenedores horizontalmente */
+    max-width: 1200px; 
+    margin: 20px auto; 
     padding: 20px;
-    box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho */
+    box-sizing: border-box; 
 }
 
 .catalog {
@@ -12,7 +11,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    justify-content: center; /* Centra los elementos en el contenedor */
+    justify-content: center; 
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -27,7 +26,7 @@
     transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
     border: 3px double grey;
     margin: 5px;
-    max-width: 300px; /* Limita el ancho máximo de las tarjetas */
+    max-width: 300px; 
 
     &:hover {
         transform: translateY(-10px);

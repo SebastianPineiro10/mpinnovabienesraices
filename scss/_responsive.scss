@@ -1,6 +1,6 @@
 @media only screen and (max-width: 480px) {
     .catalog {
-        grid-template-columns: 1fr; /* Una columna para centrar las tarjetas en pantallas pequeñas */
+        grid-template-columns: 1fr; 
     }
 
     .cart-section {
@@ -17,10 +17,10 @@
         margin-right: 0;
         margin-top: 10px;
         font-size: 1em;
-    }
+    } 
 }
 
-/* Responsividad para pantallas pequeñas a medianas (481px - 767px) */
+
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .catalog {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -42,7 +42,7 @@
     }
 }
 
-/* Responsividad para pantallas medianas (768px - 979px) */
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .catalog {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -60,7 +60,7 @@
     }
 }
 
-/* Responsividad para pantallas grandes (980px - 1200px) */
+
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
     .catalog {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -77,7 +77,7 @@
     }
 }
 
-/* Responsividad para pantallas extra grandes (1200px y más) */
+
 @media only screen and (min-width: 1200px) {
     .catalog {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -94,484 +94,484 @@
     }
 }
 
-/* Media queries para la página de visión */
+
 @media only screen and (min-width: 1201px) {
-    /* Estilos para pantallas grandes */
+    
     .vision h1 {
-        font-size: 32px; /* Tamaño de fuente para dispositivos grandes */
+        font-size: 32px; 
     }
 
     .vision p {
-        font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
-        line-height: 1.6; /* Interlineado para dispositivos grandes */
+        font-size: 18px; 
+        line-height: 1.6;
     }
 
     .vision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+    
 }
 
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
-    /* Estilos para pantallas medianas (980px - 1200px) */
+    
     .vision h1 {
-        font-size: 28px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 28px; 
     }
 
     .vision p {
-        font-size: 16px; /* Tamaño de fuente para dispositivos medianos */
-        line-height: 1.5; /* Interlineado para dispositivos medianos */
+        font-size: 16px; 
+        line-height: 1.5; 
     }
     .vision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-    /* Estilos para pantallas medianas (768px - 979px) */
+    
     .vision h1 {
-        font-size: 24px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 24px; 
     }
 
     .vision p {
-        font-size: 14px; /* Tamaño de fuente para dispositivos medianos */
-        line-height: 1.4; /* Interlineado para dispositivos medianos */
+        font-size: 14px; 
+        line-height: 1.4; 
     }
     .vision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+    
 }
 
 @media only screen and (max-width: 767px) {
-    /* Estilos para pantallas pequeñas (481px - 767px) */
+    
     .vision h1 {
-        font-size: 20px; /* Tamaño de fuente para dispositivos pequeños */
+        font-size: 20px; 
     }
 
     .vision p {
-        font-size: 12px; /* Tamaño de fuente para dispositivos pequeños */
-        line-height: 1.3; /* Interlineado para dispositivos pequeños */
+        font-size: 12px; 
+        line-height: 1.3; 
     }
     .vision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas muy pequeñas (480px o menos) */
+
 @media only screen and (max-width: 480px) {
-    /* Estilos para pantallas muy pequeñas (480px o menos) */
+    
     .vision h1 {
-        font-size: 18px; /* Tamaño de fuente para dispositivos muy pequeños */
+        font-size: 18px; 
     }
 
     .vision p {
-        font-size: 10px; /* Tamaño de fuente para dispositivos muy pequeños */
-        line-height: 1.2; /* Interlineado para dispositivos muy pequeños */
+        font-size: 10px; 
+        line-height: 1.2; 
     }
     .vision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de visión aquí si es necesario */
+    
 }
 @media only screen and (max-width: 320px) {
-    /* Estilos para pantallas de 320px */
+    
     .vision h1 {
-        font-size: 16px; /* Tamaño de fuente para dispositivos de 320px */
+        font-size: 16px; 
     }
 
     .vision p {
-        font-size: 9px; /* Tamaño de fuente para dispositivos de 320px */
-        line-height: 1.1; /* Interlineado para dispositivos de 320px */
+        font-size: 9px; 
+        line-height: 1.1; 
     }
     .vision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 }
 
 
 
-/* Estilos para pantallas muy grandes (1201px o más) */
+
 @media only screen and (min-width: 1201px) {
     .valores {
-        padding: 50px 100px; /* Ajusta el padding según necesidades */
+        padding: 50px 100px; 
     }
 
     .valores-lista li {
-        font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
+        font-size: 18px; 
     }
     .valores img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas medianas (980px - 1200px) */
+
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
     .valores {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .valores-lista li {
-        font-size: 18px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 18px; 
     }
     .valores img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas medianas (768px - 979px) */
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .valores {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .valores-lista li {
-        font-size: 18px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 18px; 
     }
     .valores img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas pequeñas (481px - 767px) */
+
 @media only screen and (max-width: 767px) {
     .valores {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .valores-lista li {
-        font-size: 18px; /* Tamaño de fuente para dispositivos pequeños */
+        font-size: 18px; 
     }
     .valores img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas muy pequeñas (480px o menos) */
+
 @media only screen and (max-width: 480px) {
     .valores {
-        padding: 50px 5px; /* Ajusta el padding según necesidades */
+        padding: 50px 5px; 
     }
 
     .valores-lista li {
-        font-size: 14px; /* Tamaño de fuente para dispositivos muy pequeños */
+        font-size: 14px; 
     }
     .valores img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de valores aquí si es necesario */
+    
 }
 @media only screen and (max-width: 320px) {
     .valores {
-        padding: 50px 5px; /* Ajusta el padding según necesidades */
+        padding: 50px 5px; 
     }
 
     .valores-lista li {
-        font-size: 12px; /* Tamaño de fuente para dispositivos de 320px */
+        font-size: 12px; 
     }
     .valores img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 }
 
 
-/* Estilos para pantallas muy grandes (1201px o más) */
+
 @media only screen and (min-width: 1201px) {
     .history {
-        padding: 50px 100px; /* Ajusta el padding según necesidades */
+        padding: 50px 100px; 
     }
 
     .history h1 {
-        font-size: 32px; /* Tamaño de fuente para dispositivos grandes */
+        font-size: 32px; 
     }
 
     .history p {
-        font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
-        line-height: 1.6; /* Interlineado para dispositivos grandes */
+        font-size: 18px; 
+        line-height: 1.6; 
     }
     .history img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas medianas (980px - 1200px) */
+
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
     .history {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .history h1 {
-        font-size: 28px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 28px; 
     }
 
     .history p {
-        font-size: 16px; /* Tamaño de fuente para dispositivos medianos */
-        line-height: 1.5; /* Interlineado para dispositivos medianos */
+        font-size: 16px; 
+        line-height: 1.5; 
     }
     .history img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas medianas (768px - 979px) */
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .history {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .history h1 {
-        font-size: 24px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 24px; 
     }
 
     .history p {
-        font-size: 14px; /* Tamaño de fuente para dispositivos medianos */
-        line-height: 1.4; /* Interlineado para dispositivos medianos */
+        font-size: 14px; 
+        line-height: 1.4; 
     }
     .history img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas pequeñas (481px - 767px) */
+
 @media only screen and (max-width: 767px) {
     .history {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .history h1 {
-        font-size: 20px; /* Tamaño de fuente para dispositivos pequeños */
+        font-size: 20px; 
     }
 
     .history p {
-        font-size: 12px; /* Tamaño de fuente para dispositivos pequeños */
-        line-height: 1.3; /* Interlineado para dispositivos pequeños */
+        font-size: 12px; 
+        line-height: 1.3; 
     }
     .history img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
-    /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+    
 }
 
-/* Estilos para pantallas muy pequeñas (480px o menos) */
+
 @media only screen and (max-width: 480px) {
     .history {
-        padding: 50px 5px; /* Ajusta el padding según necesidades */
+        padding: 50px 5px; 
     }
 
     .history h1 {
-        font-size: 18px; /* Tamaño de fuente para dispositivos muy pequeños */
+        font-size: 18px; 
     }
 
     .history p {
-        font-size: 10px; /* Tamaño de fuente para dispositivos muy pequeños */
-        line-height: 1.2; /* Interlineado para dispositivos muy pequeños */
+        font-size: 10px; 
+        line-height: 1.2; 
     }
     .history img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
 
-    /* Agrega más estilos específicos para la página de historia aquí si es necesario */
+  
 }
 @media only screen and (max-width: 320px) {
     .history {
-        padding: 50px 5px; /* Ajusta el padding según necesidades */
+        padding: 50px 5px; 
     }
 
     .history h1 {
-        font-size: 16px; /* Tamaño de fuente para dispositivos de 320px */
+        font-size: 16px; 
     }
 
     .history p {
-        font-size: 8px; /* Tamaño de fuente para dispositivos de 320px */
-        line-height: 1.1; /* Interlineado para dispositivos de 320px */
+        font-size: 8px; 
+        line-height: 1.1; 
     }
     .history img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 }
 
-/* Estilos para pantallas muy grandes (1201px o más) */
+
 @media only screen and (min-width: 1201px) {
     .mision {
-        padding: 50px 100px; /* Ajusta el padding según necesidades */
+        padding: 50px 100px;
     }
 
     .mision h1, .mision h2 {
-        font-size: 32px; /* Tamaño de fuente para dispositivos grandes */
+        font-size: 32px; 
     }
 
     .mision p {
-        font-size: 18px; /* Tamaño de fuente para dispositivos grandes */
-        line-height: 1.6; /* Interlineado para dispositivos grandes */
+        font-size: 18px; 
+        line-height: 1.6; 
     }
     .mision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
 }
 
-/* Estilos para pantallas medianas (980px - 1200px) */
+
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
     .mision {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .mision h1, .mision h2 {
-        font-size: 28px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 28px; 
     }
 
     .mision p {
-        font-size: 16px; /* Tamaño de fuente para dispositivos medianos */
-        line-height: 1.5; /* Interlineado para dispositivos medianos */
+        font-size: 16px; 
+        line-height: 1.5; 
     }
     .mision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 }
 
-/* Estilos para pantallas medianas (768px - 979px) */
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .mision {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .mision h1, .mision h2 {
-        font-size: 24px; /* Tamaño de fuente para dispositivos medianos */
+        font-size: 24px; 
     }
 
     .mision p {
-        font-size: 14px; /* Tamaño de fuente para dispositivos medianos */
-        line-height: 1.4; /* Interlineado para dispositivos medianos */
+        font-size: 14px; 
+        line-height: 1.4; 
     }
     .mision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 }
 
-/* Estilos para pantallas pequeñas (481px - 767px) */
+
 @media only screen and (max-width: 767px) {
     .mision {
-        padding: 50px 10px; /* Ajusta el padding según necesidades */
+        padding: 50px 10px; 
     }
 
     .mision h1, .mision h2 {
-        font-size: 20px; /* Tamaño de fuente para dispositivos pequeños */
+        font-size: 20px; 
     }
 
     .mision p {
-        font-size: 12px; /* Tamaño de fuente para dispositivos pequeños */
-        line-height: 1.3; /* Interlineado para dispositivos pequeños */
+        font-size: 12px; 
+        line-height: 1.3; 
     }
     .mision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 }
 
-/* Estilos para pantallas muy pequeñas (480px o menos) */
+
 @media only screen and (max-width: 480px) {
     .mision {
-        padding: 50px 5px; /* Ajusta el padding según necesidades */
+        padding: 50px 5px; 
     }
 
     .mision h1, .mision h2 {
-        font-size: 18px; /* Tamaño de fuente para dispositivos muy pequeños */
+        font-size: 18px; 
     }
 
     .mision p {
-        font-size: 10px; /* Tamaño de fuente para dispositivos muy pequeños */
-        line-height: 1.2; /* Interlineado para dispositivos muy pequeños */
+        font-size: 10px; 
+        line-height: 1.2; 
     }
     .mision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 
 }
 @media only screen and (max-width: 320px) {
     .mision {
-        padding: 50px 5px; /* Ajusta el padding según necesidades */
+        padding: 50px 5px;
     }
 
     .mision h1, .mision h2 {
-        font-size: 16px; /* Tamaño de fuente para dispositivos de 320px */
+        font-size: 16px; 
     }
 
     .mision p {
-        font-size: 8px; /* Tamaño de fuente para dispositivos de 320px */
-        line-height: 1.1; /* Interlineado para dispositivos de 320px */
+        font-size: 8px; 
+        line-height: 1.1; 
     }
     .mision img {
-        max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
-        height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+        max-width: 100%; 
+        height: auto; 
         background-size: cover;
     }
 }
@@ -586,11 +586,11 @@
   
     .mapa {
       padding-bottom: 20vw;
-      max-width: 100%; /* Ajuste para el ancho completo */
+      max-width: 100%; 
     }
   }
   
-  /* Estilos para pantallas medianas (768px - 980px) */
+  
   @media only screen and (min-width: 768px) and (max-width: 980px) {
     .formulario {
       padding: 5vw;
@@ -600,11 +600,11 @@
   
     .mapa {
       padding-bottom: 25vw;
-      max-width: 100%; /* Ajuste para el ancho completo */
+      max-width: 100%; 
     }
   }
   
-  /* Estilos para pantallas pequeñas (481px - 767px) */
+  
   @media only screen and (min-width: 481px) and (max-width: 767px) {
     .formulario {
       padding: 5vw;
@@ -614,7 +614,7 @@
   
     .mapa {
       padding-bottom: 30vw;
-      max-width: 100%; /* Ajuste para el ancho completo */
+      max-width: 100%; 
     }
   }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -626,21 +626,21 @@
 
     .mapa {
         padding-bottom: 35vw;
-        max-width: 100%; /* Ajuste para el ancho completo */
+        max-width: 100%; 
     }
 }
 
 
 @media only screen and (max-width: 320px) {
     .servicios {
-        flex-direction: row; /* Mantiene los elementos en fila */
-        overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+        flex-direction: row; 
+        overflow-x: auto; 
         padding: 5px;
     }
 
     .service {
         flex: 0 0 auto;
-        max-width: 100%; /* Ajusta el ancho máximo al 100% */
+        max-width: 100%; 
         font-size: 12px;
         margin: 5px;
     }
@@ -656,14 +656,14 @@
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .servicios {
-        flex-direction: row; /* Mantiene los elementos en fila */
-        overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+        flex-direction: row; 
+        overflow-x: auto; 
         padding: 10px;
     }
 
     .service {
         flex: 0 0 auto;
-        max-width: 100%; /* Ajusta el ancho máximo al 100% */
+        max-width: 100%; 
         font-size: 14px;
         margin: 10px;
     }
@@ -679,14 +679,14 @@
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .servicios {
-        flex-direction: row; /* Mantiene los elementos en fila */
-        overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+        flex-direction: row; 
+        overflow-x: auto; 
         padding: 20px;
     }
 
     .service {
         flex: 0 0 auto;
-        max-width: 45%; /* Ajusta el ancho máximo al 45% */
+        max-width: 45%; 
         font-size: 16px;
         margin: 15px;
     }
@@ -702,14 +702,14 @@
 
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
     .servicios {
-        flex-direction: row; /* Mantiene los elementos en fila */
-        overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+        flex-direction: row; 
+        overflow-x: auto; 
         padding: 30px;
     }
 
     .service {
         flex: 0 0 auto;
-        max-width: 30%; /* Ajusta el ancho máximo al 30% */
+        max-width: 30%; 
         font-size: 18px;
         margin: 20px;
     }
@@ -725,14 +725,14 @@
 
 @media only screen and (min-width: 1201px) {
     .servicios {
-        flex-direction: row; /* Mantiene los elementos en fila */
-        overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+        flex-direction: row; 
+        overflow-x: auto; 
         padding: 40px;
     }
 
     .service {
         flex: 0 0 auto;
-        max-width: 22%; /* Ajusta el ancho máximo al 22% */
+        max-width: 22%; 
         font-size: 20px;
         margin: 20px;
     }
@@ -754,181 +754,181 @@
 @media only screen and (max-width: 320px) {
     .video-carousel-section {
         .grid-container {
-            grid-template-columns: 1fr; // Una columna para centrado en pantallas extremadamente pequeñas
-            padding: 5px; // Reduce el padding para pantallas muy pequeñas
+            grid-template-columns: 1fr; 
+            padding: 5px; 
         }
 
         .video-container {
             iframe {
-                min-height: 150px; // Ajusta la altura mínima del iframe en pantallas extremadamente pequeñas
+                min-height: 150px; 
             }
         }
 
         .carousel-container {
-            padding: 5px; // Reduce el padding en pantallas muy pequeñas
+            padding: 5px; 
 
             #carouselExampleIndicators {
                 .carousel-item img {
-                    max-height: 150px; // Limita la altura máxima de la imagen en pantallas extremadamente pequeñas
+                    max-height: 150px; 
                 }
             }
         }
     }
 }
 
-// Responsividad para pantallas pequeñas (321px - 480px)
+
 @media only screen and (min-width: 321px) and (max-width: 480px) {
     .video-carousel-section {
         .grid-container {
-            grid-template-columns: 1fr; // Una columna para centrado en pantallas pequeñas
-            padding: 10px; // Reduce el padding para pantallas pequeñas
+            grid-template-columns: 1fr; 
+            padding: 10px; 
         }
 
         .video-container {
             iframe {
-                min-height: 200px; // Ajusta la altura mínima del iframe en pantallas pequeñas
+                min-height: 200px; 
             }
         }
 
         .carousel-container {
-            padding: 10px; // Reduce el padding en pantallas pequeñas
+            padding: 10px; 
 
             #carouselExampleIndicators {
                 .carousel-item img {
-                    max-height: 200px; // Limita la altura máxima de la imagen en pantallas pequeñas
+                    max-height: 200px; 
                 }
             }
         }
     }
 }
 
-// Responsividad para pantallas pequeñas a medianas (481px - 767px)
+
 @media only screen and (min-width: 481px) and (max-width: 767px) {
     .video-carousel-section {
         .grid-container {
-            grid-template-columns: 1fr; // Una columna para centrado en pantallas pequeñas a medianas
+            grid-template-columns: 1fr; 
         }
 
         .video-container {
             iframe {
-                min-height: 250px; // Ajusta la altura mínima del iframe para pantallas pequeñas a medianas
+                min-height: 250px; 
             }
         }
 
         .carousel-container {
-            padding: 15px; // Ajusta el padding en pantallas pequeñas a medianas
+            padding: 15px; 
 
             #carouselExampleIndicators {
                 .carousel-item img {
-                    max-height: 250px; // Limita la altura máxima de la imagen en pantallas pequeñas a medianas
+                    max-height: 250px; 
                 }
             }
         }
     }
 }
 
-// Responsividad para pantallas medianas (768px - 979px)
+
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     .video-carousel-section {
         .grid-container {
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Dos columnas para pantallas medianas
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
         }
 
         .video-container {
             iframe {
-                min-height: 300px; // Ajusta la altura mínima del iframe para pantallas medianas
+                min-height: 300px; 
             }
         }
 
         .carousel-container {
-            padding: 20px; // Padding estándar para pantallas medianas
+            padding: 20px; 
 
             #carouselExampleIndicators {
                 .carousel-item img {
-                    max-height: 300px; // Limita la altura máxima de la imagen para pantallas medianas
+                    max-height: 300px; 
                 }
             }
         }
     }
 }
 
-// Responsividad para pantallas grandes (980px - 1200px)
+
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
     .video-carousel-section {
         .grid-container {
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Dos columnas para pantallas grandes
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
         }
 
         .video-container {
             iframe {
-                min-height: 350px; // Ajusta la altura mínima del iframe para pantallas grandes
-                max-height: 100%; // Se ajusta al contenedor sin excederlo
+                min-height: 350px; 
+                max-height: 100%; 
             }
         }
 
         .carousel-container {
-            padding: 20px; // Padding estándar para pantallas grandes
+            padding: 20px; 
 
             #carouselExampleIndicators {
                 .carousel-item img {
-                    max-height: 350px; // Limita la altura máxima de la imagen para pantallas grandes
+                    max-height: 350px; 
                 }
             }
         }
     }
 }
 
-// Responsividad para pantallas extra grandes (1200px en adelante)
+
 @media only screen and (min-width: 1200px) {
     .video-carousel-section {
         .grid-container {
-            grid-template-columns: repeat(2, 1fr); // Dos columnas para pantallas extra grandes
-            gap: 30px; // Mayor espacio entre columnas
-            padding: 30px; // Padding estándar para pantallas extra grandes
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 30px; 
+            padding: 30px; 
         }
 
         .video-container {
             iframe {
-                min-height: 400px; // Ajusta la altura mínima del iframe para pantallas extra grandes
-                max-height: 100%; // Se ajusta al contenedor sin excederlo
+                min-height: 400px; 
+                max-height: 100%; 
             }
         }
 
         .carousel-container {
-            padding: 30px; // Padding estándar para pantallas extra grandes
+            padding: 30px; 
 
             #carouselExampleIndicators {
                 .carousel-item img {
-                    max-height: 400px; // Limita la altura máxima de la imagen para pantallas extra grandes
+                    max-height: 400px; 
                 }
             }
         }
     }
 }
 
-// Responsividad para pantallas de 1024px x 600px
+
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
     .video-carousel-section {
         .grid-container {
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Ajusta el número de columnas
-            gap: 20px; // Espaciado entre columnas
-            padding: 20px; // Padding estándar para pantallas de tamaño medio
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 20px; 
+            padding: 20px; 
         }
 
         .video-container {
             iframe {
-                min-height: 300px; // Ajusta la altura mínima del iframe para pantallas de tamaño medio
-                max-height: 100%; // Se ajusta al contenedor sin excederlo
+                min-height: 300px; 
+                max-height: 100%; 
             }
         }
 
         .carousel-container {
-            padding: 20px; // Padding estándar para pantallas de tamaño medio
+            padding: 20px; 
 
             #carouselExampleIndicators {
                 .carousel-item img {
-                    max-height: 300px; // Ajusta la altura máxima de la imagen para pantallas de tamaño medio
-                    object-fit: cover; // Mantiene la imagen cubierta sin distorsión
+                    max-height: 300px; 
+                    object-fit: cover; 
                 }
             }
         }
