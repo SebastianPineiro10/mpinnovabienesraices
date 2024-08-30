@@ -5,48 +5,53 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
-        background: rgba(128, 128, 128, 0.2); 
+        background: rgba(128, 128, 128, 0.2);
         padding: 20px;
         border-radius: 10px;
-        width: 100%; 
-        max-width: 95vw; 
-        margin: 0 auto; 
-        box-sizing: border-box; 
+        width: 100%;
+        max-width: 95vw;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .video-container {
         position: relative;
-        background-color: rgba(255, 255, 255, 0.9); 
+        width: 100%;
+        padding-top: 56.25%; 
+        background: #000;
         border-radius: 10px;
         overflow: hidden;
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-
+        box-sizing: border-box;
+    
         iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            min-height: 200px; 
-            aspect-ratio: 16 / 9; 
-            object-fit: cover; 
+            border: none;
         }
     }
+    
 
     .carousel-container {
         border-radius: 10px;
         padding: 20px;
         overflow: hidden;
+        background-color: rgba(128, 128, 128, 0.1);
 
         #carouselExampleIndicators {
-            width: 100%; 
-            max-width: 100%; 
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
-            .carousel-item img {
-                width: 100%;
-                height: auto;
-                max-height: 300px; 
-                object-fit: cover; 
-            }
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
         }
 
         .carousel-control-prev,
@@ -68,8 +73,6 @@
     }
 }
 
-
-
 .lujo {
     width: 100%;
     height: 100vh;
@@ -78,7 +81,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    position: relative; 
+    position: relative;
 }
 
 .overlay {
@@ -90,7 +93,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3); 
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     box-sizing: border-box;
 }
@@ -100,7 +103,7 @@
 }
 
 .servicios-section h2 {
-    color: #fff; 
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -109,38 +112,36 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .service {
     max-width: 300px;
     padding: 20px;
-    background-color:  rgba(128, 128, 128, 0.2);
-    color: white;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: #ffffff;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .service i {
     font-size: 40px;
-    color: white;
+    color: #ffffff;
     margin-bottom: 10px;
-    
 }
 
 .service h3 {
     margin: 0;
     font-size: 20px;
-    color: #fff; 
+    color: #ffffff;
 }
 
 .service:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
-
 
 .socios {
     display: flex;
@@ -162,7 +163,6 @@
     margin: 0 auto;
 }
 
-
 .modal {
     position: fixed;
     top: 50%;
@@ -181,7 +181,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #fff; 
+    color: #ffffff;
     text-decoration: none;
     z-index: 1;
 }
@@ -197,7 +197,6 @@
     align-items: center;
 }
 
-
 .tituloservicio {
     padding: 20px;
 }
@@ -205,19 +204,22 @@
 .tituloservicio h2 {
     text-align: center;
 }
-.container h4{
-     color: goldenrod;
-     padding: 16px;
-}
-.container h6{
-    padding: 10px;
-}
+
 .container {
-    background-color: rgba(128, 128, 128, 0.2); 
+    background-color: rgba(128, 128, 128, 0.2);
     padding: 50px;
     border-radius: 10px;
-    width: 100%; 
-    max-width: 95vw; 
-    margin: 50px auto; 
-    box-sizing: border-box; 
+    width: 100%;
+    max-width: 95vw;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+.container h4 {
+    color: goldenrod;
+    padding: 16px;
+}
+
+.container h6 {
+    padding: 10px;
 }

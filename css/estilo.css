@@ -119,30 +119,34 @@ ul {
 }
 .video-carousel-section .video-container {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding-top: 56.25%;
+  background: #000;
   border-radius: 10px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
 }
 .video-carousel-section .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  min-height: 200px;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  border: none;
 }
 .video-carousel-section .carousel-container {
   border-radius: 10px;
   padding: 20px;
   overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.1);
 }
 .video-carousel-section .carousel-container #carouselExampleIndicators {
   width: 100%;
   max-width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.video-carousel-section .carousel-container #carouselExampleIndicators .carousel-item img {
+.video-carousel-section .carousel-container .carousel-inner img {
   width: 100%;
   height: auto;
   max-height: 300px;
@@ -193,7 +197,7 @@ ul {
 }
 
 .servicios-section h2 {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -209,7 +213,7 @@ ul {
   max-width: 300px;
   padding: 20px;
   background-color: rgba(128, 128, 128, 0.2);
-  color: white;
+  color: #ffffff;
   border-radius: 15px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -219,14 +223,14 @@ ul {
 
 .service i {
   font-size: 40px;
-  color: white;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .service h3 {
   margin: 0;
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .service:hover {
@@ -271,7 +275,7 @@ ul {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   z-index: 1;
 }
@@ -295,15 +299,6 @@ ul {
   text-align: center;
 }
 
-.container h4 {
-  color: goldenrod;
-  padding: 16px;
-}
-
-.container h6 {
-  padding: 10px;
-}
-
 .container {
   background-color: rgba(128, 128, 128, 0.2);
   padding: 50px;
@@ -312,6 +307,15 @@ ul {
   max-width: 95vw;
   margin: 50px auto;
   box-sizing: border-box;
+}
+
+.container h4 {
+  color: goldenrod;
+  padding: 16px;
+}
+
+.container h6 {
+  padding: 10px;
 }
 
 .vision {
