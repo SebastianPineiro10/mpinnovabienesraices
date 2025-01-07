@@ -4,7 +4,7 @@ Este es el repositorio de la página web de Mp Innova Bienes Raices, un proyecto
 
 ## Descripción
 
-MpInnovaCoderNew es el sitio web oficial de Mp Innova Bienes Raices, una inmobiliaria especializada en ofrecer soluciones innovadoras en bienes raíces. La página web presenta información detallada sobre la empresa, sus servicios y una galería de propiedades destacadas.
+Este es el sitio web oficial de Mp Innova Bienes Raices, una inmobiliaria especializada en ofrecer soluciones innovadoras en bienes raíces. La página web presenta información detallada sobre la empresa, sus servicios y una galería de propiedades destacadas.
 
 ## Características
 
